@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDF371D41CE05D4300300998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF371D31CE05D4300300998 /* AppDelegate.swift */; };
+		FDF371D61CE05D4300300998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF371D51CE05D4300300998 /* Assets.xcassets */; };
+		FDF371D91CE05D4300300998 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF371D71CE05D4300300998 /* MainMenu.xib */; };
+		FDF371E41CE05D4300300998 /* swiftmiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF371E31CE05D4300300998 /* swiftmiTests.swift */; };
+		FDF371EF1CE05D4300300998 /* swiftmiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF371EE1CE05D4300300998 /* swiftmiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDF371E01CE05D4300300998 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDF371C81CE05D4300300998 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDF371CF1CE05D4300300998;
+			remoteInfo = swiftmi;
+		};
+		FDF371EB1CE05D4300300998 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDF371C81CE05D4300300998 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDF371CF1CE05D4300300998;
+			remoteInfo = swiftmi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDF371D01CE05D4300300998 /* swiftmi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftmi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF371D31CE05D4300300998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDF371D51CE05D4300300998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDF371D81CE05D4300300998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FDF371DA1CE05D4300300998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF371DF1CE05D4300300998 /* swiftmiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftmiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF371E31CE05D4300300998 /* swiftmiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftmiTests.swift; sourceTree = "<group>"; };
+		FDF371E51CE05D4300300998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF371EA1CE05D4300300998 /* swiftmiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftmiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF371EE1CE05D4300300998 /* swiftmiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftmiUITests.swift; sourceTree = "<group>"; };
+		FDF371F01CE05D4300300998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDF371CD1CE05D4300300998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF371DC1CE05D4300300998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF371E71CE05D4300300998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDF371C71CE05D4300300998 = {
+			isa = PBXGroup;
+			children = (
+				FDF371D21CE05D4300300998 /* swiftmi */,
+				FDF371E21CE05D4300300998 /* swiftmiTests */,
+				FDF371ED1CE05D4300300998 /* swiftmiUITests */,
+				FDF371D11CE05D4300300998 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDF371D11CE05D4300300998 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDF371D01CE05D4300300998 /* swiftmi.app */,
+				FDF371DF1CE05D4300300998 /* swiftmiTests.xctest */,
+				FDF371EA1CE05D4300300998 /* swiftmiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDF371D21CE05D4300300998 /* swiftmi */ = {
+			isa = PBXGroup;
+			children = (
+				FDF371D31CE05D4300300998 /* AppDelegate.swift */,
+				FDF371D51CE05D4300300998 /* Assets.xcassets */,
+				FDF371D71CE05D4300300998 /* MainMenu.xib */,
+				FDF371DA1CE05D4300300998 /* Info.plist */,
+			);
+			path = swiftmi;
+			sourceTree = "<group>";
+		};
+		FDF371E21CE05D4300300998 /* swiftmiTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDF371E31CE05D4300300998 /* swiftmiTests.swift */,
+				FDF371E51CE05D4300300998 /* Info.plist */,
+			);
+			path = swiftmiTests;
+			sourceTree = "<group>";
+		};
+		FDF371ED1CE05D4300300998 /* swiftmiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDF371EE1CE05D4300300998 /* swiftmiUITests.swift */,
+				FDF371F01CE05D4300300998 /* Info.plist */,
+			);
+			path = swiftmiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDF371CF1CE05D4300300998 /* swiftmi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDF371F31CE05D4300300998 /* Build configuration list for PBXNativeTarget "swiftmi" */;
+			buildPhases = (
+				FDF371CC1CE05D4300300998 /* Sources */,
+				FDF371CD1CE05D4300300998 /* Frameworks */,
+				FDF371CE1CE05D4300300998 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = swiftmi;
+			productName = swiftmi;
+			productReference = FDF371D01CE05D4300300998 /* swiftmi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDF371DE1CE05D4300300998 /* swiftmiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDF371F61CE05D4300300998 /* Build configuration list for PBXNativeTarget "swiftmiTests" */;
+			buildPhases = (
+				FDF371DB1CE05D4300300998 /* Sources */,
+				FDF371DC1CE05D4300300998 /* Frameworks */,
+				FDF371DD1CE05D4300300998 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDF371E11CE05D4300300998 /* PBXTargetDependency */,
+			);
+			name = swiftmiTests;
+			productName = swiftmiTests;
+			productReference = FDF371DF1CE05D4300300998 /* swiftmiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDF371E91CE05D4300300998 /* swiftmiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDF371F91CE05D4300300998 /* Build configuration list for PBXNativeTarget "swiftmiUITests" */;
+			buildPhases = (
+				FDF371E61CE05D4300300998 /* Sources */,
+				FDF371E71CE05D4300300998 /* Frameworks */,
+				FDF371E81CE05D4300300998 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDF371EC1CE05D4300300998 /* PBXTargetDependency */,
+			);
+			name = swiftmiUITests;
+			productName = swiftmiUITests;
+			productReference = FDF371EA1CE05D4300300998 /* swiftmiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDF371C81CE05D4300300998 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = swiftmi;
+				TargetAttributes = {
+					FDF371CF1CE05D4300300998 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					FDF371DE1CE05D4300300998 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FDF371CF1CE05D4300300998;
+					};
+					FDF371E91CE05D4300300998 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FDF371CF1CE05D4300300998;
+					};
+				};
+			};
+			buildConfigurationList = FDF371CB1CE05D4300300998 /* Build configuration list for PBXProject "swiftmi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDF371C71CE05D4300300998;
+			productRefGroup = FDF371D11CE05D4300300998 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDF371CF1CE05D4300300998 /* swiftmi */,
+				FDF371DE1CE05D4300300998 /* swiftmiTests */,
+				FDF371E91CE05D4300300998 /* swiftmiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDF371CE1CE05D4300300998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF371D61CE05D4300300998 /* Assets.xcassets in Resources */,
+				FDF371D91CE05D4300300998 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF371DD1CE05D4300300998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF371E81CE05D4300300998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDF371CC1CE05D4300300998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF371D41CE05D4300300998 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF371DB1CE05D4300300998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF371E41CE05D4300300998 /* swiftmiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF371E61CE05D4300300998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF371EF1CE05D4300300998 /* swiftmiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDF371E11CE05D4300300998 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDF371CF1CE05D4300300998 /* swiftmi */;
+			targetProxy = FDF371E01CE05D4300300998 /* PBXContainerItemProxy */;
+		};
+		FDF371EC1CE05D4300300998 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDF371CF1CE05D4300300998 /* swiftmi */;
+			targetProxy = FDF371EB1CE05D4300300998 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDF371D71CE05D4300300998 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDF371D81CE05D4300300998 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDF371F11CE05D4300300998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDF371F21CE05D4300300998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FDF371F41CE05D4300300998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = swiftmi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftmi.osx.swiftmi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FDF371F51CE05D4300300998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = swiftmi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftmi.osx.swiftmi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FDF371F71CE05D4300300998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = swiftmiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftmi.osx.swiftmiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftmi.app/Contents/MacOS/swiftmi";
+			};
+			name = Debug;
+		};
+		FDF371F81CE05D4300300998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = swiftmiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftmi.osx.swiftmiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftmi.app/Contents/MacOS/swiftmi";
+			};
+			name = Release;
+		};
+		FDF371FA1CE05D4300300998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = swiftmiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftmi.osx.swiftmiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = swiftmi;
+			};
+			name = Debug;
+		};
+		FDF371FB1CE05D4300300998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = swiftmiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftmi.osx.swiftmiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = swiftmi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDF371CB1CE05D4300300998 /* Build configuration list for PBXProject "swiftmi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF371F11CE05D4300300998 /* Debug */,
+				FDF371F21CE05D4300300998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDF371F31CE05D4300300998 /* Build configuration list for PBXNativeTarget "swiftmi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF371F41CE05D4300300998 /* Debug */,
+				FDF371F51CE05D4300300998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FDF371F61CE05D4300300998 /* Build configuration list for PBXNativeTarget "swiftmiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF371F71CE05D4300300998 /* Debug */,
+				FDF371F81CE05D4300300998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FDF371F91CE05D4300300998 /* Build configuration list for PBXNativeTarget "swiftmiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF371FA1CE05D4300300998 /* Debug */,
+				FDF371FB1CE05D4300300998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDF371C81CE05D4300300998 /* Project object */;
+}
