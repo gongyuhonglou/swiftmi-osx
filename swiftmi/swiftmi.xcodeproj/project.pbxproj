@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FDAA583C1CE18644002303BC /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAA583A1CE18644002303BC /* ArticlesViewController.swift */; };
+		FDAA583D1CE18644002303BC /* ArticlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDAA583B1CE18644002303BC /* ArticlesViewController.xib */; };
 		FDF371D41CE05D4300300998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF371D31CE05D4300300998 /* AppDelegate.swift */; };
 		FDF371D61CE05D4300300998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF371D51CE05D4300300998 /* Assets.xcassets */; };
 		FDF371D91CE05D4300300998 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF371D71CE05D4300300998 /* MainMenu.xib */; };
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FDAA583A1CE18644002303BC /* ArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
+		FDAA583B1CE18644002303BC /* ArticlesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticlesViewController.xib; sourceTree = "<group>"; };
 		FDF371D01CE05D4300300998 /* swiftmi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftmi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF371D31CE05D4300300998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF371D51CE05D4300300998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 				FDF371D51CE05D4300300998 /* Assets.xcassets */,
 				FDF371D71CE05D4300300998 /* MainMenu.xib */,
 				FDF371DA1CE05D4300300998 /* Info.plist */,
+				FDAA583A1CE18644002303BC /* ArticlesViewController.swift */,
+				FDAA583B1CE18644002303BC /* ArticlesViewController.xib */,
 			);
 			path = swiftmi;
 			sourceTree = "<group>";
@@ -224,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDF371D61CE05D4300300998 /* Assets.xcassets in Resources */,
+				FDAA583D1CE18644002303BC /* ArticlesViewController.xib in Resources */,
 				FDF371D91CE05D4300300998 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDF371D41CE05D4300300998 /* AppDelegate.swift in Sources */,
+				FDAA583C1CE18644002303BC /* ArticlesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +479,7 @@
 				FDF371F51CE05D4300300998 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDF371F61CE05D4300300998 /* Build configuration list for PBXNativeTarget "swiftmiTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +488,7 @@
 				FDF371F81CE05D4300300998 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDF371F91CE05D4300300998 /* Build configuration list for PBXNativeTarget "swiftmiUITests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +497,7 @@
 				FDF371FB1CE05D4300300998 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,7 +14,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
 
-
+    let popover = NSPopover()
+    
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
         if let button = statusItem.button {
@@ -22,6 +23,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.imagePosition = .ImageLeft
             button.action = #selector(togglePopover)
         }
+        
+        popover.contentViewController = ArticlesViewController(nibName: "ArticlesViewController", bundle: nil)
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
