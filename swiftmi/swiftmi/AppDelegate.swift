@@ -32,22 +32,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     
-    func showPopover(sender: AnyObject?) {
-        if let button = statusItem.button {
-            popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: .MinY)
-        }
-    }
-    
-    func closePopover(sender: AnyObject?) {
-        popover.performClose(sender)
-    }
     
     func togglePopover(sender: AnyObject?) {
-        if popover.shown {
-            closePopover(sender)
-        } else {
-            showPopover(sender)
-        }
+        SMPopover.toggle()
     }
 
 
