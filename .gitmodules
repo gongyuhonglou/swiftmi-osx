@@ -1,3 +1,6 @@
 [submodule "third/Alamofire"]
 	path = third/Alamofire
 	url = https://github.com/Alamofire/Alamofire.git
+[submodule "third/SwiftyJSON"]
+	path = third/SwiftyJSON
+	url = https://github.com/SwiftyJSON/SwiftyJSON.git
