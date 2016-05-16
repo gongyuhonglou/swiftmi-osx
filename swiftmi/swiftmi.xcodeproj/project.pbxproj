@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FD915FC01CE8857D00C5061D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD915FB71CE8856500C5061D /* SwiftyJSON.framework */; };
 		FD915FC11CE8858100C5061D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD915F9F1CE8855F00C5061D /* Alamofire.framework */; };
+		FD915FCA1CE9848100C5061D /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD915FC81CE9848100C5061D /* PopoverViewController.swift */; };
+		FD915FCB1CE9848100C5061D /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD915FC91CE9848100C5061D /* PopoverViewController.xib */; };
 		FDAA583C1CE18644002303BC /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAA583A1CE18644002303BC /* ArticlesViewController.swift */; };
 		FDAA583D1CE18644002303BC /* ArticlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDAA583B1CE18644002303BC /* ArticlesViewController.xib */; };
 		FDAA587A1CE30080002303BC /* SMPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAA58791CE30080002303BC /* SMPopover.swift */; };
@@ -137,6 +139,8 @@
 /* Begin PBXFileReference section */
 		FD915F901CE8855F00C5061D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../third/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		FD915FA81CE8856500C5061D /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = ../third/SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
+		FD915FC81CE9848100C5061D /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		FD915FC91CE9848100C5061D /* PopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
 		FDAA583A1CE18644002303BC /* ArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
 		FDAA583B1CE18644002303BC /* ArticlesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticlesViewController.xib; sourceTree = "<group>"; };
 		FDAA58791CE30080002303BC /* SMPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMPopover.swift; sourceTree = "<group>"; };
@@ -217,6 +221,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FD915FC71CE9841C00C5061D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD915FC91CE9848100C5061D /* PopoverViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FD915FCC1CE9848900C5061D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD915FC81CE9848100C5061D /* PopoverViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		FDAA58781CE30035002303BC /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +269,8 @@
 		FDF371D21CE05D4300300998 /* swiftmi */ = {
 			isa = PBXGroup;
 			children = (
+				FD915FCC1CE9848900C5061D /* Controller */,
+				FD915FC71CE9841C00C5061D /* Views */,
 				FDAA58781CE30035002303BC /* Common */,
 				FDF371D31CE05D4300300998 /* AppDelegate.swift */,
 				FDF371D51CE05D4300300998 /* Assets.xcassets */,
@@ -493,6 +515,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD915FCB1CE9848100C5061D /* PopoverViewController.xib in Resources */,
 				FDF371D61CE05D4300300998 /* Assets.xcassets in Resources */,
 				FDAA583D1CE18644002303BC /* ArticlesViewController.xib in Resources */,
 				FDF371D91CE05D4300300998 /* MainMenu.xib in Resources */,
@@ -520,6 +543,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD915FCA1CE9848100C5061D /* PopoverViewController.swift in Sources */,
 				FDF371D41CE05D4300300998 /* AppDelegate.swift in Sources */,
 				FDAA583C1CE18644002303BC /* ArticlesViewController.swift in Sources */,
 				FDAA587A1CE30080002303BC /* SMPopover.swift in Sources */,
