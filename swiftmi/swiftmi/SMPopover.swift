@@ -27,6 +27,7 @@ class SMPopover {
         }
         
         appDelegate.popover.close()
+        appDelegate.eventMonitor?.stop()
     }
     
     class func show() {
@@ -36,6 +37,7 @@ class SMPopover {
             return
         }
         
+        appDelegate.eventMonitor?.start()
         appDelegate.popover.showRelativeToRect(button.frame, ofView: button, preferredEdge: .MinY)
     }
 

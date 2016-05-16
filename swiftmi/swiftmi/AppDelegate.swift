@@ -15,6 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
 
     let popover = NSPopover()
+    var eventMonitor : EventMonitor?
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
@@ -24,6 +25,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.action = #selector(togglePopover)
         }
         
+        eventMonitor = EventMonitor(mask: [.LeftMouseDownMask, .RightMouseDownMask]) {
+            [unowned self] event in
+            if self.popover.shown {
+                SMPopover.close()
+            }
+        }
         popover.contentViewController = ArticlesViewController(nibName: "ArticlesViewController", bundle: nil)
     }
 
