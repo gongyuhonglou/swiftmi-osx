@@ -14,6 +14,8 @@
 		FDA0475B1CE9C6D000AF7121 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA0475A1CE9C6D000AF7121 /* EventMonitor.swift */; };
 		FDAA587A1CE30080002303BC /* SMPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAA58791CE30080002303BC /* SMPopover.swift */; };
 		FDB5AE341CEAE29200CE7BBB /* TBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE331CEAE29200CE7BBB /* TBCell.swift */; };
+		FDB5AE751CEAF4D900CE7BBB /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE741CEAF4D900CE7BBB /* ServiceApi.swift */; };
+		FDB5AE771CEAF4EC00CE7BBB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE761CEAF4EC00CE7BBB /* Router.swift */; };
 		FDF371D41CE05D4300300998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF371D31CE05D4300300998 /* AppDelegate.swift */; };
 		FDF371D61CE05D4300300998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF371D51CE05D4300300998 /* Assets.xcassets */; };
 		FDF371D91CE05D4300300998 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF371D71CE05D4300300998 /* MainMenu.xib */; };
@@ -144,6 +146,8 @@
 		FDA0475A1CE9C6D000AF7121 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		FDAA58791CE30080002303BC /* SMPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMPopover.swift; sourceTree = "<group>"; };
 		FDB5AE331CEAE29200CE7BBB /* TBCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCell.swift; sourceTree = "<group>"; };
+		FDB5AE741CEAF4D900CE7BBB /* ServiceApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceApi.swift; sourceTree = "<group>"; };
+		FDB5AE761CEAF4EC00CE7BBB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		FDF371D01CE05D4300300998 /* swiftmi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftmi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF371D31CE05D4300300998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF371D51CE05D4300300998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -247,6 +251,15 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
+		FDB5AE731CEAF4A100CE7BBB /* services */ = {
+			isa = PBXGroup;
+			children = (
+				FDB5AE741CEAF4D900CE7BBB /* ServiceApi.swift */,
+				FDB5AE761CEAF4EC00CE7BBB /* Router.swift */,
+			);
+			name = services;
+			sourceTree = "<group>";
+		};
 		FDF371C71CE05D4300300998 = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +284,7 @@
 		FDF371D21CE05D4300300998 /* swiftmi */ = {
 			isa = PBXGroup;
 			children = (
+				FDB5AE731CEAF4A100CE7BBB /* services */,
 				FD915FCC1CE9848900C5061D /* Controller */,
 				FD915FC71CE9841C00C5061D /* Views */,
 				FDAA58781CE30035002303BC /* Common */,
@@ -544,6 +558,8 @@
 			files = (
 				FD915FCA1CE9848100C5061D /* PopoverViewController.swift in Sources */,
 				FDB5AE341CEAE29200CE7BBB /* TBCell.swift in Sources */,
+				FDB5AE751CEAF4D900CE7BBB /* ServiceApi.swift in Sources */,
+				FDB5AE771CEAF4EC00CE7BBB /* Router.swift in Sources */,
 				FDA0475B1CE9C6D000AF7121 /* EventMonitor.swift in Sources */,
 				FDF371D41CE05D4300300998 /* AppDelegate.swift in Sources */,
 				FDAA587A1CE30080002303BC /* SMPopover.swift in Sources */,
