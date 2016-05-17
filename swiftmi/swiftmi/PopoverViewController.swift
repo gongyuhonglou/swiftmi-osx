@@ -10,9 +10,15 @@ import Cocoa
 
 class PopoverViewController: NSViewController {
 
+     
+    @IBOutlet weak var tableView: NSTableView!
+    @IBOutlet weak var lastUpdated: NSTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
     }
     
+    
+    
 }
+
