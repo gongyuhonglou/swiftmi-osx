@@ -31,7 +31,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 SMPopover.close()
             }
         }
-        popover.contentViewController = ArticlesViewController(nibName: "ArticlesViewController", bundle: nil)
+        popover.contentViewController = PopoverViewController(nibName: "PopoverViewController", bundle: nil)
+        popover.behavior = .Transient
+
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
