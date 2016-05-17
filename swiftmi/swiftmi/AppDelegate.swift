@@ -31,6 +31,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 SMPopover.close()
             }
         }
+        popover.appearance = NSAppearance(named: NSAppearanceNameAqua)
+
         popover.contentViewController = PopoverViewController(nibName: "PopoverViewController", bundle: nil)
         popover.behavior = .Transient
 
