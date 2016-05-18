@@ -12,7 +12,6 @@ class ServiceApi: NSObject {
     
     static var host:String = "http://www.swiftmi.com"
     
-    
     class func getArticlesUrl(maxId:Int, count:Int) -> String {
         let url="\(host)/api/articles?maxId=\(maxId)&count=\(count)&withContent=1"
         return url
