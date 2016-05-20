@@ -10,7 +10,7 @@ import Cocoa
 import Alamofire
 import SwiftyJSON
 
-class Articles: NSObject {
+class ArticleServices: NSObject {
     
     var loading:Bool = false
 

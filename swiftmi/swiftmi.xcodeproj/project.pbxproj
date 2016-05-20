@@ -17,6 +17,7 @@
 		FDB5AE751CEAF4D900CE7BBB /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE741CEAF4D900CE7BBB /* ServiceApi.swift */; };
 		FDB5AE771CEAF4EC00CE7BBB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE761CEAF4EC00CE7BBB /* Router.swift */; };
 		FDB5AE7A1CECC83000CE7BBB /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE791CECC83000CE7BBB /* Articles.swift */; };
+		FDB5AE801CEEB5A900CE7BBB /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE7F1CEEB5A900CE7BBB /* Article.swift */; };
 		FDF371D41CE05D4300300998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF371D31CE05D4300300998 /* AppDelegate.swift */; };
 		FDF371D61CE05D4300300998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF371D51CE05D4300300998 /* Assets.xcassets */; };
 		FDF371D91CE05D4300300998 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF371D71CE05D4300300998 /* MainMenu.xib */; };
@@ -150,6 +151,7 @@
 		FDB5AE741CEAF4D900CE7BBB /* ServiceApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceApi.swift; sourceTree = "<group>"; };
 		FDB5AE761CEAF4EC00CE7BBB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		FDB5AE791CECC83000CE7BBB /* Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
+		FDB5AE7F1CEEB5A900CE7BBB /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		FDF371D01CE05D4300300998 /* swiftmi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftmi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF371D31CE05D4300300998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF371D51CE05D4300300998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -263,6 +265,14 @@
 			name = services;
 			sourceTree = "<group>";
 		};
+		FDB5AE7E1CEEB59B00CE7BBB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDB5AE7F1CEEB5A900CE7BBB /* Article.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		FDF371C71CE05D4300300998 = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +297,7 @@
 		FDF371D21CE05D4300300998 /* swiftmi */ = {
 			isa = PBXGroup;
 			children = (
+				FDB5AE7E1CEEB59B00CE7BBB /* Model */,
 				FDB5AE731CEAF4A100CE7BBB /* services */,
 				FD915FCC1CE9848900C5061D /* Controller */,
 				FD915FC71CE9841C00C5061D /* Views */,
@@ -561,6 +572,7 @@
 			files = (
 				FDB5AE7A1CECC83000CE7BBB /* Articles.swift in Sources */,
 				FD915FCA1CE9848100C5061D /* PopoverViewController.swift in Sources */,
+				FDB5AE801CEEB5A900CE7BBB /* Article.swift in Sources */,
 				FDB5AE341CEAE29200CE7BBB /* TBCell.swift in Sources */,
 				FDB5AE751CEAF4D900CE7BBB /* ServiceApi.swift in Sources */,
 				FDB5AE771CEAF4EC00CE7BBB /* Router.swift in Sources */,
