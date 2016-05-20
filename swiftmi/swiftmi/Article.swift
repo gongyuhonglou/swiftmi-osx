@@ -7,17 +7,26 @@
 //
 
 import Cocoa
+import SwiftyJSON
 
 class Article: NSObject {
 
-    var Title: String
-    var Source: String
-    var CreateDate: NSDate
+    var title: String?
+    var source: String?
+    var createDate: Int64?
+    var viewCount: Int64?
     
-    
-    init(title:String, source:String, createDate:NSDate) {
-        self.Title = title;
-        self.Source = source;
-        self.CreateDate = createDate
+    class func mapping(json:JSON) -> Article{
+        let article = Article()
+        let createDate = json["createDate"].int64!
+        let viewCount = json["viewCount"].int64!
+        
+        article.title = json["title"].stringValue
+        article.source = json["source"].stringValue
+        article.viewCount = createDate
+        article.createDate = viewCount
+        return article
     }
+    
+    
 }
