@@ -69,6 +69,7 @@ extension PopoverViewController: NSTableViewDataSource {
 extension PopoverViewController: NSTableViewDelegate {
     func tableViewSelectionDidChange(notification: NSNotification) {
         let table = notification.object as! NSTableView
+         NSWorkspace.sharedWorkspace().openURL(NSURL(string: self.articles[table.selectedRow].url)!)
     }
     
 }
