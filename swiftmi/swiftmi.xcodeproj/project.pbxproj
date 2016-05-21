@@ -16,7 +16,7 @@
 		FDB5AE341CEAE29200CE7BBB /* TBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE331CEAE29200CE7BBB /* TBCell.swift */; };
 		FDB5AE751CEAF4D900CE7BBB /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE741CEAF4D900CE7BBB /* ServiceApi.swift */; };
 		FDB5AE771CEAF4EC00CE7BBB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE761CEAF4EC00CE7BBB /* Router.swift */; };
-		FDB5AE7A1CECC83000CE7BBB /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE791CECC83000CE7BBB /* Articles.swift */; };
+		FDB5AE7A1CECC83000CE7BBB /* ArticleArticleServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE791CECC83000CE7BBB /* ArticleArticleServices.swift */; };
 		FDB5AE801CEEB5A900CE7BBB /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE7F1CEEB5A900CE7BBB /* Article.swift */; };
 		FDF371D41CE05D4300300998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF371D31CE05D4300300998 /* AppDelegate.swift */; };
 		FDF371D61CE05D4300300998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF371D51CE05D4300300998 /* Assets.xcassets */; };
@@ -150,7 +150,7 @@
 		FDB5AE331CEAE29200CE7BBB /* TBCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCell.swift; sourceTree = "<group>"; };
 		FDB5AE741CEAF4D900CE7BBB /* ServiceApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceApi.swift; sourceTree = "<group>"; };
 		FDB5AE761CEAF4EC00CE7BBB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		FDB5AE791CECC83000CE7BBB /* Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
+		FDB5AE791CECC83000CE7BBB /* ArticleArticleServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleArticleServices.swift; sourceTree = "<group>"; };
 		FDB5AE7F1CEEB5A900CE7BBB /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		FDF371D01CE05D4300300998 /* swiftmi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftmi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF371D31CE05D4300300998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -260,7 +260,7 @@
 			children = (
 				FDB5AE741CEAF4D900CE7BBB /* ServiceApi.swift */,
 				FDB5AE761CEAF4EC00CE7BBB /* Router.swift */,
-				FDB5AE791CECC83000CE7BBB /* Articles.swift */,
+				FDB5AE791CECC83000CE7BBB /* ArticleArticleServices.swift */,
 			);
 			name = services;
 			sourceTree = "<group>";
@@ -570,7 +570,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDB5AE7A1CECC83000CE7BBB /* Articles.swift in Sources */,
+				FDB5AE7A1CECC83000CE7BBB /* ArticleArticleServices.swift in Sources */,
 				FD915FCA1CE9848100C5061D /* PopoverViewController.swift in Sources */,
 				FDB5AE801CEEB5A900CE7BBB /* Article.swift in Sources */,
 				FDB5AE341CEAE29200CE7BBB /* TBCell.swift in Sources */,
