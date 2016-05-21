@@ -15,7 +15,7 @@ class ArticleServices: NSObject {
     var loading:Bool = false
 
     
-    func loadData(maxId:Int,isPullRefresh:Bool) {
+    func loadData(maxId:Int,callback:((articles:[Article]?) -> ())) {
         if self.loading {
             return
         }
@@ -28,8 +28,17 @@ class ArticleServices: NSObject {
             let json = res.result.value
             let result = JSON(json!)
             
-            print(result);
-        
+            if result["isSuc"].boolValue {
+                var articles:[Article] = [Article]()
+                let items = result["result"].arrayValue
+                for item in items {
+                    let article = Article.mapping(item)
+                    articles.append(article)
+                }
+                callback(articles: articles)
+            }else {
+                callback(articles: nil)
+            }
         }
         
     }

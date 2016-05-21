@@ -19,6 +19,10 @@ class PopoverViewController: NSViewController {
         // Do view setup here.
     }
     
+    func loadData() {
+        
+    }
+    
     
     
 }
