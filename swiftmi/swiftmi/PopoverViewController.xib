@@ -15,11 +15,11 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView identifier="PopoverView" id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="347"/>
+            <rect key="frame" x="0.0" y="0.0" width="480" height="481"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <customView identifier="HeaderView" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vSd-W2-PB2">
-                    <rect key="frame" x="0.0" y="310" width="480" height="37"/>
+                    <rect key="frame" x="0.0" y="444" width="480" height="37"/>
                     <subviews>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eyx-mf-jLq">
                             <rect key="frame" x="10" y="10" width="78" height="17"/>
@@ -32,13 +32,13 @@
                     </subviews>
                 </customView>
                 <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="71" horizontalPageScroll="10" verticalLineScroll="71" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="LhM-RW-29v">
-                    <rect key="frame" x="0.0" y="40" width="480" height="271"/>
+                    <rect key="frame" x="0.0" y="40" width="480" height="405"/>
                     <clipView key="contentView" ambiguous="YES" id="gK3-ai-Dew">
-                        <rect key="frame" x="1" y="1" width="478" height="269"/>
+                        <rect key="frame" x="1" y="1" width="478" height="403"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="none" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="69" rowSizeStyle="automatic" viewBased="YES" id="cR4-Zu-DgL">
-                                <rect key="frame" x="0.0" y="0.0" width="478" height="269"/>
+                                <rect key="frame" x="0.0" y="0.0" width="478" height="403"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <size key="intercellSpacing" width="3" height="2"/>
                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -164,7 +164,7 @@
                     </subviews>
                 </customView>
             </subviews>
-            <point key="canvasLocation" x="245" y="360.5"/>
+            <point key="canvasLocation" x="245" y="427.5"/>
         </customView>
     </objects>
     <resources>
