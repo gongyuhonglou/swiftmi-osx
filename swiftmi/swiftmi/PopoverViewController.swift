@@ -21,11 +21,17 @@ class PopoverViewController: NSViewController {
         // Do view setup here.
         self.tableView.setDataSource(self)
         self.tableView.setDelegate(self)
+        
         loadData();
     }
     
     override func viewWillAppear() {
         //self.tableView.reloadData()
+    }
+    
+    func updateLastLabel() {
+        let currentDate = NSDate()
+        lastUpdated.stringValue = "更新时间 \(currentDate.description)"
     }
     
     func loadData() {
@@ -34,6 +40,7 @@ class PopoverViewController: NSViewController {
             if let items = articles {
                 self.articles = items
                 self.tableView.reloadData()
+                self.updateLastLabel()
             }
             
         }
