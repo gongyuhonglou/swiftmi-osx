@@ -22,9 +22,7 @@ class Article: NSObject {
         let article = Article()
         let createDate = json["createDate"].doubleValue
         let viewCount = json["viewCount"].int64!
-        
         article.articleId = json["articleId"].intValue
-
         article.title = json["title"].stringValue
         article.source = json["sourceName"].stringValue
         article.viewCount = viewCount
