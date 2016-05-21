@@ -24,6 +24,10 @@ class PopoverViewController: NSViewController {
         loadData();
     }
     
+    override func viewWillAppear() {
+        //self.tableView.reloadData()
+    }
+    
     func loadData() {
         articleServices.loadData(0) {
             articles in

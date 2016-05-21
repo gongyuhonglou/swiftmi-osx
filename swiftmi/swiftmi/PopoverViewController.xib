@@ -83,18 +83,18 @@
                                                                 </constraints>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="source" id="HGe-BQ-aHG">
                                                                     <font key="font" metaFont="system"/>
-                                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                    <color key="textColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                             </textField>
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5pR-4u-AhV">
-                                                                <rect key="frame" x="76" y="10" width="64" height="17"/>
+                                                                <rect key="frame" x="76" y="10" width="84" height="17"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="60" id="6vE-YH-dvQ"/>
+                                                                    <constraint firstAttribute="width" constant="80" id="6vE-YH-dvQ"/>
                                                                 </constraints>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="date" id="va1-Ve-yDm">
                                                                     <font key="font" metaFont="system"/>
-                                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                    <color key="textColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                             </textField>
