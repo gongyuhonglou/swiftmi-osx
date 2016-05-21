@@ -21,24 +21,24 @@ class ArticleServices: NSObject {
         }
         self.loading = true
         
-        Alamofire.request(Router.ArticleList(maxId: maxId, count: 12)).responseJSON {
+        Alamofire.request(Router.ArticleList(maxId: maxId, count: 20)).responseJSON {
             res in
             self.loading = false
             
             let json = res.result.value
             let result = JSON(json!)
             
-            if result["isSuc"].boolValue {
-                var articles:[Article] = [Article]()
-                let items = result["result"].arrayValue
-                for item in items {
-                    let article = Article.mapping(item)
-                    articles.append(article)
-                }
-                callback(articles: articles)
-            }else {
-                callback(articles: nil)
+            guard let _ = result["isSuc"].bool else {
+                return callback(articles: nil)
             }
+            
+            var articles:[Article] = [Article]()
+            let items = result["result"].arrayValue
+            for item in items {
+                let article = Article.mapping(item)
+                articles.append(article)
+            }
+            callback(articles: articles)
         }
         
     }

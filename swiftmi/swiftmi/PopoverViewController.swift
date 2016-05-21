@@ -13,14 +13,22 @@ class PopoverViewController: NSViewController {
      
     @IBOutlet weak var tableView: NSTableView!
     @IBOutlet weak var lastUpdated: NSTextField!
-    var articles: [Article]!
+    var articles: [Article] = [Article]()
+    var articleServices = ArticleServices()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
     }
     
     func loadData() {
-        
+        articleServices.loadData(0) {
+            articles in
+            if let items = articles {
+                self.articles = items
+            }
+            
+        }
     }
     
     
