@@ -19,6 +19,9 @@ class PopoverViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        self.tableView.setDataSource(self)
+        self.tableView.setDelegate(self)
+        loadData();
     }
     
     func loadData() {
@@ -26,6 +29,7 @@ class PopoverViewController: NSViewController {
             articles in
             if let items = articles {
                 self.articles = items
+                self.tableView.reloadData()
             }
             
         }
@@ -38,12 +42,14 @@ class PopoverViewController: NSViewController {
 // MARK: - NSTableViewDataSource
 extension PopoverViewController: NSTableViewDataSource {
     func numberOfRowsInTableView(aTableView: NSTableView) -> Int {
-        return articles.count
+        print(self.articles)
+        return self.articles.count
     }
     
     
     func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
         let cellView = tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: tableView) as! TBCell
+        cellView.configureData(self.articles[row])
         return cellView
     }
     

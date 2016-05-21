@@ -22,4 +22,20 @@ class TBCell: NSTableCellView {
         // Drawing code here.
     }
     
+    func formatDate(date:NSDate)->String {
+        
+        let fmt = NSDateFormatter()
+        
+        fmt.dateFormat = "yyyy-MM-dd"
+        let dateString = fmt.stringFromDate(date)
+        return dateString
+    }
+    
+    func configureData(article:Article) {
+       titleTextView.stringValue = article.title!
+       sourceTextView.stringValue = article.source!
+       let createDate = NSDate(timeIntervalSince1970: article.createDate)
+       dateTextView.stringValue = formatDate(createDate)
+    }
+    
 }
