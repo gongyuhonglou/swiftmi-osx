@@ -1,0 +1,17 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+use_frameworks!
+
+target 'swiftmi' do
+pod 'SwiftyTimer'
+end
+
+target 'swiftmiTests' do
+
+end
+
+target 'swiftmiUITests' do
+
+end
+

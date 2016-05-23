@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3EA6811E0F3861AAE040889 /* Pods_swiftmi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B1DE5EFD94A448B4684464 /* Pods_swiftmi.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FD915FC01CE8857D00C5061D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD915FB71CE8856500C5061D /* SwiftyJSON.framework */; };
 		FD915FC11CE8858100C5061D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD915F9F1CE8855F00C5061D /* Alamofire.framework */; };
 		FD915FCA1CE9848100C5061D /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD915FC81CE9848100C5061D /* PopoverViewController.swift */; };
@@ -18,7 +19,6 @@
 		FDB5AE771CEAF4EC00CE7BBB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE761CEAF4EC00CE7BBB /* Router.swift */; };
 		FDB5AE7A1CECC83000CE7BBB /* ArticleArticleServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE791CECC83000CE7BBB /* ArticleArticleServices.swift */; };
 		FDB5AE801CEEB5A900CE7BBB /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE7F1CEEB5A900CE7BBB /* Article.swift */; };
-		FDB5AE841CF2D27800CE7BBB /* SwiftyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE831CF2D27800CE7BBB /* SwiftyTimer.swift */; };
 		FDF371D41CE05D4300300998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF371D31CE05D4300300998 /* AppDelegate.swift */; };
 		FDF371D61CE05D4300300998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF371D51CE05D4300300998 /* Assets.xcassets */; };
 		FDF371D91CE05D4300300998 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF371D71CE05D4300300998 /* MainMenu.xib */; };
@@ -142,6 +142,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		78E9BE34225350469319B58A /* Pods-swiftmi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftmi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftmi/Pods-swiftmi.debug.xcconfig"; sourceTree = "<group>"; };
+		93B1DE5EFD94A448B4684464 /* Pods_swiftmi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftmi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A87A55BB7DE3AE7C7F9CDAEC /* Pods-swiftmi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftmi.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftmi/Pods-swiftmi.release.xcconfig"; sourceTree = "<group>"; };
 		FD915F901CE8855F00C5061D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../third/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		FD915FA81CE8856500C5061D /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = ../third/SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		FD915FC81CE9848100C5061D /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
@@ -153,8 +156,6 @@
 		FDB5AE761CEAF4EC00CE7BBB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		FDB5AE791CECC83000CE7BBB /* ArticleArticleServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleArticleServices.swift; sourceTree = "<group>"; };
 		FDB5AE7F1CEEB5A900CE7BBB /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
-		FDB5AE821CF2D27800CE7BBB /* SwiftyTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyTimer.h; sourceTree = "<group>"; };
-		FDB5AE831CF2D27800CE7BBB /* SwiftyTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyTimer.swift; sourceTree = "<group>"; };
 		FDF371D01CE05D4300300998 /* swiftmi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftmi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF371D31CE05D4300300998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF371D51CE05D4300300998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -175,6 +176,7 @@
 			files = (
 				FD915FC11CE8858100C5061D /* Alamofire.framework in Frameworks */,
 				FD915FC01CE8857D00C5061D /* SwiftyJSON.framework in Frameworks */,
+				C3EA6811E0F3861AAE040889 /* Pods_swiftmi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +197,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BDF2E5FBF48831195303952 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93B1DE5EFD94A448B4684464 /* Pods_swiftmi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDB035CF49BCB55715E975C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78E9BE34225350469319B58A /* Pods-swiftmi.debug.xcconfig */,
+				A87A55BB7DE3AE7C7F9CDAEC /* Pods-swiftmi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FD915F8F1CE8853A00C5061D /* third */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,15 +295,6 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		FDB5AE811CF2D26900CE7BBB /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				FDB5AE821CF2D27800CE7BBB /* SwiftyTimer.h */,
-				FDB5AE831CF2D27800CE7BBB /* SwiftyTimer.swift */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
 		FDF371C71CE05D4300300998 = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +303,8 @@
 				FDF371E21CE05D4300300998 /* swiftmiTests */,
 				FDF371ED1CE05D4300300998 /* swiftmiUITests */,
 				FDF371D11CE05D4300300998 /* Products */,
+				CDB035CF49BCB55715E975C5 /* Pods */,
+				3BDF2E5FBF48831195303952 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -309,7 +321,6 @@
 		FDF371D21CE05D4300300998 /* swiftmi */ = {
 			isa = PBXGroup;
 			children = (
-				FDB5AE811CF2D26900CE7BBB /* Extensions */,
 				FDB5AE7E1CEEB59B00CE7BBB /* Model */,
 				FDB5AE731CEAF4A100CE7BBB /* services */,
 				FD915FCC1CE9848900C5061D /* Controller */,
@@ -348,9 +359,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF371F31CE05D4300300998 /* Build configuration list for PBXNativeTarget "swiftmi" */;
 			buildPhases = (
+				77325C38550B77C3A644819C /* Check Pods Manifest.lock */,
 				FDF371CC1CE05D4300300998 /* Sources */,
 				FDF371CD1CE05D4300300998 /* Frameworks */,
 				FDF371CE1CE05D4300300998 /* Resources */,
+				3D81517B609B00DBD666E0E7 /* Embed Pods Frameworks */,
+				1402BA858454D534EA552D8E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -578,6 +592,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1402BA858454D534EA552D8E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftmi/Pods-swiftmi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D81517B609B00DBD666E0E7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftmi/Pods-swiftmi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77325C38550B77C3A644819C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FDF371CC1CE05D4300300998 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -592,7 +654,6 @@
 				FDA0475B1CE9C6D000AF7121 /* EventMonitor.swift in Sources */,
 				FDF371D41CE05D4300300998 /* AppDelegate.swift in Sources */,
 				FDAA587A1CE30080002303BC /* SMPopover.swift in Sources */,
-				FDB5AE841CF2D27800CE7BBB /* SwiftyTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,6 +784,7 @@
 		};
 		FDF371F41CE05D4300300998 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78E9BE34225350469319B58A /* Pods-swiftmi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -735,6 +797,7 @@
 		};
 		FDF371F51CE05D4300300998 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A87A55BB7DE3AE7C7F9CDAEC /* Pods-swiftmi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
