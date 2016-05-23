@@ -8,6 +8,7 @@
 
 import Cocoa
 import SwiftyTimer
+import SwiftDate
 
 class PopoverViewController: NSViewController {
 
@@ -48,8 +49,10 @@ class PopoverViewController: NSViewController {
     }
     
     func updateLastLabel() {
+        
         let currentDate = NSDate()
-        lastUpdated.stringValue = "更新时间 \(currentDate.description)"
+        let time = currentDate.toString(DateFormat.Custom("YYYY-MM-dd HH:mm:ss"))
+        lastUpdated.stringValue = "更新时间 \(time!)"
     }
     
     func loadData() {

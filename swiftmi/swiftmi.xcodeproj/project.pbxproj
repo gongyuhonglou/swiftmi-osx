@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5D9279649B5FD17534140506 /* Pods_swiftmiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492D620C740025E8F5C76E19 /* Pods_swiftmiUITests.framework */; };
-		8FA4F85FDE19FFA44AC37D9E /* Pods_swiftmi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D700C47C2E440605697C75B /* Pods_swiftmi.framework */; };
+		8FA4F85FDE19FFA44AC37D9E /* Pods_swiftmi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D700C47C2E440605697C75B /* Pods_swiftmi.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		94A353344EE9AC3F2B364F0C /* Pods_swiftmiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A55EC644CA2470AB0FD0DD3 /* Pods_swiftmiTests.framework */; };
 		FD915FC01CE8857D00C5061D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD915FB71CE8856500C5061D /* SwiftyJSON.framework */; };
 		FD915FC11CE8858100C5061D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD915F9F1CE8855F00C5061D /* Alamofire.framework */; };
