@@ -1,10 +1,15 @@
 PODS:
+  - SwiftDate (3.0.8)
   - SwiftyTimer (1.4.0)
 
 DEPENDENCIES:
+  - SwiftDate
   - SwiftyTimer
 
 SPEC CHECKSUMS:
+  SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
   SwiftyTimer: db4458cfaf67fc71e16ad6e4637c60b86f76a649
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: 0c767d7e6cf37d1245c38b5ff0434a6501945db2
+
+COCOAPODS: 1.0.0

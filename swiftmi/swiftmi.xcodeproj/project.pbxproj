@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C3EA6811E0F3861AAE040889 /* Pods_swiftmi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B1DE5EFD94A448B4684464 /* Pods_swiftmi.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		5D9279649B5FD17534140506 /* Pods_swiftmiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492D620C740025E8F5C76E19 /* Pods_swiftmiUITests.framework */; };
+		8FA4F85FDE19FFA44AC37D9E /* Pods_swiftmi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D700C47C2E440605697C75B /* Pods_swiftmi.framework */; };
+		94A353344EE9AC3F2B364F0C /* Pods_swiftmiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A55EC644CA2470AB0FD0DD3 /* Pods_swiftmiTests.framework */; };
 		FD915FC01CE8857D00C5061D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD915FB71CE8856500C5061D /* SwiftyJSON.framework */; };
 		FD915FC11CE8858100C5061D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD915F9F1CE8855F00C5061D /* Alamofire.framework */; };
 		FD915FCA1CE9848100C5061D /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD915FC81CE9848100C5061D /* PopoverViewController.swift */; };
@@ -142,9 +144,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		78E9BE34225350469319B58A /* Pods-swiftmi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftmi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftmi/Pods-swiftmi.debug.xcconfig"; sourceTree = "<group>"; };
-		93B1DE5EFD94A448B4684464 /* Pods_swiftmi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftmi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A87A55BB7DE3AE7C7F9CDAEC /* Pods-swiftmi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftmi.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftmi/Pods-swiftmi.release.xcconfig"; sourceTree = "<group>"; };
+		0E659A92D6728BEBFF624524 /* Pods-swiftmiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftmiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftmiUITests/Pods-swiftmiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2D700C47C2E440605697C75B /* Pods_swiftmi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftmi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F602C288A7E6090A432F47E /* Pods-swiftmi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftmi.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftmi/Pods-swiftmi.release.xcconfig"; sourceTree = "<group>"; };
+		492D620C740025E8F5C76E19 /* Pods_swiftmiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftmiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A55EC644CA2470AB0FD0DD3 /* Pods_swiftmiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftmiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C4D95C0956C29FEB571086 /* Pods-swiftmi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftmi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftmi/Pods-swiftmi.debug.xcconfig"; sourceTree = "<group>"; };
+		DC514FEA6FED3FB2195E283D /* Pods-swiftmiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftmiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftmiTests/Pods-swiftmiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6DC4A85B4454242578D5E0E /* Pods-swiftmiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftmiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftmiTests/Pods-swiftmiTests.release.xcconfig"; sourceTree = "<group>"; };
+		EAFA313BC0D84021382387CB /* Pods-swiftmiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftmiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftmiUITests/Pods-swiftmiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD915F901CE8855F00C5061D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../third/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		FD915FA81CE8856500C5061D /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = ../third/SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		FD915FC81CE9848100C5061D /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
@@ -176,7 +184,7 @@
 			files = (
 				FD915FC11CE8858100C5061D /* Alamofire.framework in Frameworks */,
 				FD915FC01CE8857D00C5061D /* SwiftyJSON.framework in Frameworks */,
-				C3EA6811E0F3861AAE040889 /* Pods_swiftmi.framework in Frameworks */,
+				8FA4F85FDE19FFA44AC37D9E /* Pods_swiftmi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94A353344EE9AC3F2B364F0C /* Pods_swiftmiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,25 +200,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D9279649B5FD17534140506 /* Pods_swiftmiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3BDF2E5FBF48831195303952 /* Frameworks */ = {
+		B039C8F183ADBD1605763619 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				93B1DE5EFD94A448B4684464 /* Pods_swiftmi.framework */,
+				2D700C47C2E440605697C75B /* Pods_swiftmi.framework */,
+				7A55EC644CA2470AB0FD0DD3 /* Pods_swiftmiTests.framework */,
+				492D620C740025E8F5C76E19 /* Pods_swiftmiUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CDB035CF49BCB55715E975C5 /* Pods */ = {
+		B4C4702354B4EEC9B97F61BE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				78E9BE34225350469319B58A /* Pods-swiftmi.debug.xcconfig */,
-				A87A55BB7DE3AE7C7F9CDAEC /* Pods-swiftmi.release.xcconfig */,
+				B8C4D95C0956C29FEB571086 /* Pods-swiftmi.debug.xcconfig */,
+				2F602C288A7E6090A432F47E /* Pods-swiftmi.release.xcconfig */,
+				DC514FEA6FED3FB2195E283D /* Pods-swiftmiTests.debug.xcconfig */,
+				E6DC4A85B4454242578D5E0E /* Pods-swiftmiTests.release.xcconfig */,
+				EAFA313BC0D84021382387CB /* Pods-swiftmiUITests.debug.xcconfig */,
+				0E659A92D6728BEBFF624524 /* Pods-swiftmiUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -303,8 +319,8 @@
 				FDF371E21CE05D4300300998 /* swiftmiTests */,
 				FDF371ED1CE05D4300300998 /* swiftmiUITests */,
 				FDF371D11CE05D4300300998 /* Products */,
-				CDB035CF49BCB55715E975C5 /* Pods */,
-				3BDF2E5FBF48831195303952 /* Frameworks */,
+				B4C4702354B4EEC9B97F61BE /* Pods */,
+				B039C8F183ADBD1605763619 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -359,12 +375,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF371F31CE05D4300300998 /* Build configuration list for PBXNativeTarget "swiftmi" */;
 			buildPhases = (
-				77325C38550B77C3A644819C /* Check Pods Manifest.lock */,
+				082462480D5DE4C8F06E7506 /* 📦 Check Pods Manifest.lock */,
 				FDF371CC1CE05D4300300998 /* Sources */,
 				FDF371CD1CE05D4300300998 /* Frameworks */,
 				FDF371CE1CE05D4300300998 /* Resources */,
-				3D81517B609B00DBD666E0E7 /* Embed Pods Frameworks */,
-				1402BA858454D534EA552D8E /* Copy Pods Resources */,
+				8277AA7CC0482033317A0293 /* 📦 Embed Pods Frameworks */,
+				096679AB782FA655F071690A /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -379,9 +395,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF371F61CE05D4300300998 /* Build configuration list for PBXNativeTarget "swiftmiTests" */;
 			buildPhases = (
+				763C7C80AB6A2C340AB91630 /* 📦 Check Pods Manifest.lock */,
 				FDF371DB1CE05D4300300998 /* Sources */,
 				FDF371DC1CE05D4300300998 /* Frameworks */,
 				FDF371DD1CE05D4300300998 /* Resources */,
+				661BBE52DB94D08A76159751 /* 📦 Embed Pods Frameworks */,
+				8297C6503920C00646B12F15 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -397,9 +416,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF371F91CE05D4300300998 /* Build configuration list for PBXNativeTarget "swiftmiUITests" */;
 			buildPhases = (
+				521D97D110D1F7058A13AF2A /* 📦 Check Pods Manifest.lock */,
 				FDF371E61CE05D4300300998 /* Sources */,
 				FDF371E71CE05D4300300998 /* Frameworks */,
 				FDF371E81CE05D4300300998 /* Resources */,
+				420FF0D5DD04DBF86871A50D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -593,14 +614,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1402BA858454D534EA552D8E /* Copy Pods Resources */ = {
+		082462480D5DE4C8F06E7506 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		096679AB782FA655F071690A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -608,14 +644,74 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftmi/Pods-swiftmi-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3D81517B609B00DBD666E0E7 /* Embed Pods Frameworks */ = {
+		420FF0D5DD04DBF86871A50D /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftmiUITests/Pods-swiftmiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		521D97D110D1F7058A13AF2A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		661BBE52DB94D08A76159751 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftmiTests/Pods-swiftmiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		763C7C80AB6A2C340AB91630 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8277AA7CC0482033317A0293 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,19 +719,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftmi/Pods-swiftmi-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		77325C38550B77C3A644819C /* Check Pods Manifest.lock */ = {
+		8297C6503920C00646B12F15 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftmiTests/Pods-swiftmiTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -784,7 +880,7 @@
 		};
 		FDF371F41CE05D4300300998 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78E9BE34225350469319B58A /* Pods-swiftmi.debug.xcconfig */;
+			baseConfigurationReference = B8C4D95C0956C29FEB571086 /* Pods-swiftmi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -797,7 +893,7 @@
 		};
 		FDF371F51CE05D4300300998 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A87A55BB7DE3AE7C7F9CDAEC /* Pods-swiftmi.release.xcconfig */;
+			baseConfigurationReference = 2F602C288A7E6090A432F47E /* Pods-swiftmi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -810,6 +906,7 @@
 		};
 		FDF371F71CE05D4300300998 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC514FEA6FED3FB2195E283D /* Pods-swiftmiTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -823,6 +920,7 @@
 		};
 		FDF371F81CE05D4300300998 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6DC4A85B4454242578D5E0E /* Pods-swiftmiTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -836,6 +934,7 @@
 		};
 		FDF371FA1CE05D4300300998 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAFA313BC0D84021382387CB /* Pods-swiftmiUITests.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = swiftmiUITests/Info.plist;
@@ -848,6 +947,7 @@
 		};
 		FDF371FB1CE05D4300300998 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E659A92D6728BEBFF624524 /* Pods-swiftmiUITests.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = swiftmiUITests/Info.plist;
