@@ -16,6 +16,8 @@ class PopoverViewController: NSViewController {
     var articles: [Article] = [Article]()
     var articleServices = ArticleServices()
 
+    private var reloadDataTimer: NSTimer?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
@@ -27,6 +29,21 @@ class PopoverViewController: NSViewController {
     
     override func viewWillAppear() {
         //self.tableView.reloadData()
+        super.viewWillAppear()
+        reloadDataTimer = NSTimer.every(15.seconds) {
+            [weak self] in
+            self?.loadData();
+        }
+    }
+    
+    override func viewWillDisappear() {
+        super.viewWillDisappear()
+        
+        if let timer = reloadDataTimer {
+            timer.invalidate()
+        }
+        
+        reloadDataTimer = nil
     }
     
     func updateLastLabel() {
