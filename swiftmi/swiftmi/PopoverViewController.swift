@@ -25,7 +25,7 @@ class PopoverViewController: NSViewController {
         // Do view setup here.
         self.tableView.setDataSource(self)
         self.tableView.setDelegate(self)
-        
+
         loadData();
     }
     
