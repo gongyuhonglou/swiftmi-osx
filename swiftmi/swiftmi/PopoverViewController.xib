@@ -146,17 +146,9 @@
                             <rect key="frame" x="9" y="8" width="27" height="27"/>
                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Icon-Small" id="DNh-Ai-Whj"/>
                         </imageView>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agH-hl-LHb">
-                            <rect key="frame" x="42" y="13" width="50" height="17"/>
-                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="SwiftMi" id="6iv-A2-a1l">
-                                <font key="font" metaFont="system"/>
-                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                            </textFieldCell>
-                        </textField>
-                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPp-UN-k2N">
-                            <rect key="frame" x="440" y="8" width="33" height="27"/>
-                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="iXz-9S-McI">
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uzV-8H-Gyf">
+                            <rect key="frame" x="453" y="9" width="20" height="20"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="icon-settings" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="maA-hs-cCr">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
@@ -169,5 +161,6 @@
     </objects>
     <resources>
         <image name="Icon-Small" width="29" height="29"/>
+        <image name="icon-settings" width="50" height="50"/>
     </resources>
 </document>
