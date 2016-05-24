@@ -47,6 +47,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func togglePopover(sender: AnyObject?) {
         SMPopover.toggle()
     }
+    
+    func quit() {
+        NSApplication.sharedApplication().terminate(self)
+    }
 
 
 }

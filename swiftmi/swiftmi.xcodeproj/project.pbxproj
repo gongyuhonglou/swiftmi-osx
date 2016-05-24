@@ -21,6 +21,7 @@
 		FDB5AE771CEAF4EC00CE7BBB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE761CEAF4EC00CE7BBB /* Router.swift */; };
 		FDB5AE7A1CECC83000CE7BBB /* ArticleArticleServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE791CECC83000CE7BBB /* ArticleArticleServices.swift */; };
 		FDB5AE801CEEB5A900CE7BBB /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AE7F1CEEB5A900CE7BBB /* Article.swift */; };
+		FDB5AEBC1CF4399400CE7BBB /* SMSettingsMenuAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5AEBB1CF4399400CE7BBB /* SMSettingsMenuAction.swift */; };
 		FDF371D41CE05D4300300998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF371D31CE05D4300300998 /* AppDelegate.swift */; };
 		FDF371D61CE05D4300300998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF371D51CE05D4300300998 /* Assets.xcassets */; };
 		FDF371D91CE05D4300300998 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF371D71CE05D4300300998 /* MainMenu.xib */; };
@@ -164,6 +165,7 @@
 		FDB5AE761CEAF4EC00CE7BBB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		FDB5AE791CECC83000CE7BBB /* ArticleArticleServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleArticleServices.swift; sourceTree = "<group>"; };
 		FDB5AE7F1CEEB5A900CE7BBB /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		FDB5AEBB1CF4399400CE7BBB /* SMSettingsMenuAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSettingsMenuAction.swift; sourceTree = "<group>"; };
 		FDF371D01CE05D4300300998 /* swiftmi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftmi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF371D31CE05D4300300998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF371D51CE05D4300300998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 			children = (
 				FDAA58791CE30080002303BC /* SMPopover.swift */,
 				FDA0475A1CE9C6D000AF7121 /* EventMonitor.swift */,
+				FDB5AEBB1CF4399400CE7BBB /* SMSettingsMenuAction.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -744,6 +747,7 @@
 				FDB5AE7A1CECC83000CE7BBB /* ArticleArticleServices.swift in Sources */,
 				FD915FCA1CE9848100C5061D /* PopoverViewController.swift in Sources */,
 				FDB5AE801CEEB5A900CE7BBB /* Article.swift in Sources */,
+				FDB5AEBC1CF4399400CE7BBB /* SMSettingsMenuAction.swift in Sources */,
 				FDB5AE341CEAE29200CE7BBB /* TBCell.swift in Sources */,
 				FDB5AE751CEAF4D900CE7BBB /* ServiceApi.swift in Sources */,
 				FDB5AE771CEAF4EC00CE7BBB /* Router.swift in Sources */,
