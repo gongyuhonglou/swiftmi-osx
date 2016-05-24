@@ -38,6 +38,10 @@ class PopoverViewController: NSViewController {
         }
     }
     
+    @IBAction func toggleSettingButton(sender: NSView) {
+        SMSettingsMenuAction.perform(sender)
+        
+    }
     override func viewWillDisappear() {
         super.viewWillDisappear()
         
