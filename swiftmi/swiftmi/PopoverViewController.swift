@@ -25,7 +25,7 @@ class PopoverViewController: NSViewController {
         // Do view setup here.
         self.tableView.setDataSource(self)
         self.tableView.setDelegate(self)
-
+        
         loadData();
     }
     
@@ -59,11 +59,24 @@ class PopoverViewController: NSViewController {
         lastUpdated.stringValue = "更新时间 \(time!)"
     }
     
-    func loadData() {
-        articleServices.loadData(0) {
+    func loadData(maxId:Int = 0) {
+        articleServices.loadData(maxId) {
             articles in
             if let items = articles {
-                self.articles = items
+                if maxId == 0 {
+                    self.articles = items
+                    for item in items.reverse() {
+                        if !self.articles.contains({ (article:Article) -> Bool in
+                            return article.articleId == item.articleId
+                        }) {
+                            
+                          self.articles.insert(item, atIndex: 0)
+                        }
+                    }
+                   
+                } else {
+                    self.articles.appendContentsOf(items)
+                }
                 self.tableView.reloadData()
                 self.updateLastLabel()
             }
@@ -78,15 +91,7 @@ class PopoverViewController: NSViewController {
 // MARK: - NSTableViewDataSource
 extension PopoverViewController: NSTableViewDataSource {
     func numberOfRowsInTableView(aTableView: NSTableView) -> Int {
-        print(self.articles)
         return self.articles.count
-    }
-    
-    
-    func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        let cellView = tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: tableView) as! TBCell
-        cellView.configureData(self.articles[row])
-        return cellView
     }
     
 }
@@ -95,6 +100,17 @@ extension PopoverViewController: NSTableViewDelegate {
     func tableViewSelectionDidChange(notification: NSNotification) {
         let table = notification.object as! NSTableView
          NSWorkspace.sharedWorkspace().openURL(NSURL(string: self.articles[table.selectedRow].url)!)
+    }
+    
+    func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        
+        if self.articles.count - row < 3,let last = self.articles.last {
+            loadData(last.articleId) ///load more
+        }
+        
+        let cellView = tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: tableView) as! TBCell
+        cellView.configureData(self.articles[row])
+        return cellView
     }
     
 }
