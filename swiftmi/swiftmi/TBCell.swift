@@ -38,4 +38,13 @@ class TBCell: NSTableCellView {
        dateTextView.stringValue = formatDate(createDate)
     }
     
+    override func mouseEntered(theEvent: NSEvent) {
+        self.layer?.backgroundColor = NSColor.sm_highlightColor().CGColor
+    }
+    
+    override func mouseExited(theEvent: NSEvent) {
+        
+        self.layer?.backgroundColor = NSColor.sm_whiteColor().CGColor
+
+    }
 }

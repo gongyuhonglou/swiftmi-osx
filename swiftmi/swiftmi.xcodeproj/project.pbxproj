@@ -10,6 +10,9 @@
 		5D9279649B5FD17534140506 /* Pods_swiftmiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492D620C740025E8F5C76E19 /* Pods_swiftmiUITests.framework */; };
 		8FA4F85FDE19FFA44AC37D9E /* Pods_swiftmi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D700C47C2E440605697C75B /* Pods_swiftmi.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		94A353344EE9AC3F2B364F0C /* Pods_swiftmiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A55EC644CA2470AB0FD0DD3 /* Pods_swiftmiTests.framework */; };
+		FD222CBB1CFC2114008D6496 /* NSColor+SwiftMi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD222CBA1CFC2114008D6496 /* NSColor+SwiftMi.swift */; };
+		FD45A7BF1CFF4226009C92B7 /* SwiftyJSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FD915FB71CE8856500C5061D /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD45A7C01CFF422B009C92B7 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FD915F9F1CE8855F00C5061D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FD915FC01CE8857D00C5061D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD915FB71CE8856500C5061D /* SwiftyJSON.framework */; };
 		FD915FC11CE8858100C5061D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD915F9F1CE8855F00C5061D /* Alamofire.framework */; };
 		FD915FCA1CE9848100C5061D /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD915FC81CE9848100C5061D /* PopoverViewController.swift */; };
@@ -144,6 +147,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FD45A7B01CFF420E009C92B7 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FD45A7C01CFF422B009C92B7 /* Alamofire.framework in Copy Frameworks */,
+				FD45A7BF1CFF4226009C92B7 /* SwiftyJSON.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0E659A92D6728BEBFF624524 /* Pods-swiftmiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftmiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftmiUITests/Pods-swiftmiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2D700C47C2E440605697C75B /* Pods_swiftmi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftmi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +172,7 @@
 		DC514FEA6FED3FB2195E283D /* Pods-swiftmiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftmiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftmiTests/Pods-swiftmiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6DC4A85B4454242578D5E0E /* Pods-swiftmiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftmiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftmiTests/Pods-swiftmiTests.release.xcconfig"; sourceTree = "<group>"; };
 		EAFA313BC0D84021382387CB /* Pods-swiftmiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftmiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftmiUITests/Pods-swiftmiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD222CBA1CFC2114008D6496 /* NSColor+SwiftMi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+SwiftMi.swift"; sourceTree = "<group>"; };
 		FD915F901CE8855F00C5061D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../third/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		FD915FA81CE8856500C5061D /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = ../third/SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		FD915FC81CE9848100C5061D /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +249,14 @@
 				0E659A92D6728BEBFF624524 /* Pods-swiftmiUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD222CAB1CFC20BB008D6496 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FD222CBA1CFC2114008D6496 /* NSColor+SwiftMi.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		FD915F8F1CE8853A00C5061D /* third */ = {
@@ -340,6 +367,7 @@
 		FDF371D21CE05D4300300998 /* swiftmi */ = {
 			isa = PBXGroup;
 			children = (
+				FD222CAB1CFC20BB008D6496 /* Extensions */,
 				FDB5AE7E1CEEB59B00CE7BBB /* Model */,
 				FDB5AE731CEAF4A100CE7BBB /* services */,
 				FD915FCC1CE9848900C5061D /* Controller */,
@@ -384,6 +412,7 @@
 				FDF371CE1CE05D4300300998 /* Resources */,
 				8277AA7CC0482033317A0293 /* 📦 Embed Pods Frameworks */,
 				096679AB782FA655F071690A /* 📦 Copy Pods Resources */,
+				FD45A7B01CFF420E009C92B7 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -753,6 +782,7 @@
 				FDB5AE771CEAF4EC00CE7BBB /* Router.swift in Sources */,
 				FDA0475B1CE9C6D000AF7121 /* EventMonitor.swift in Sources */,
 				FDF371D41CE05D4300300998 /* AppDelegate.swift in Sources */,
+				FD222CBB1CFC2114008D6496 /* NSColor+SwiftMi.swift in Sources */,
 				FDAA587A1CE30080002303BC /* SMPopover.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
