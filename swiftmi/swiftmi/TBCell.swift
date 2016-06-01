@@ -16,6 +16,9 @@ class TBCell: NSTableCellView {
 
     @IBOutlet weak var dateTextView: NSTextField!
 
+    @IBOutlet weak var wrapView: NSView!
+
+    private var trackingArea: NSTrackingArea?
     override func drawRect(dirtyRect: NSRect) {
         super.drawRect(dirtyRect)
 
@@ -31,6 +34,22 @@ class TBCell: NSTableCellView {
         return dateString
     }
     
+    private func createTrackingAreaIfNeeded() {
+        if trackingArea == nil {
+            trackingArea = NSTrackingArea(rect: CGRect.zero, options: [NSTrackingAreaOptions.InVisibleRect, NSTrackingAreaOptions.MouseEnteredAndExited, NSTrackingAreaOptions.ActiveAlways], owner: self, userInfo: nil)
+        }
+    }
+    
+    override func updateTrackingAreas() {
+        super.updateTrackingAreas()
+        
+        createTrackingAreaIfNeeded()
+        
+        if !trackingAreas.contains(trackingArea!) {
+            addTrackingArea(trackingArea!)
+        }
+    }
+    
     func configureData(article:Article) {
        titleTextView.stringValue = article.title!
        sourceTextView.stringValue = article.source!
@@ -39,12 +58,13 @@ class TBCell: NSTableCellView {
     }
     
     override func mouseEntered(theEvent: NSEvent) {
-        self.layer?.backgroundColor = NSColor.sm_highlightColor().CGColor
+        wrapView.wantsLayer = true
+        wrapView.layer?.backgroundColor  = NSColor.sm_highlightColor().CGColor
     }
     
     override func mouseExited(theEvent: NSEvent) {
         
-        self.layer?.backgroundColor = NSColor.sm_whiteColor().CGColor
+        wrapView.layer?.backgroundColor = NSColor.sm_whiteColor().CGColor
 
     }
 }

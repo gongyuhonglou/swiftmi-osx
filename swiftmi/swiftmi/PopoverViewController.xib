@@ -121,6 +121,7 @@
                                                     <outlet property="dateTextView" destination="5pR-4u-AhV" id="LGU-gq-ob7"/>
                                                     <outlet property="sourceTextView" destination="633-Wm-yDo" id="hYc-It-agW"/>
                                                     <outlet property="titleTextView" destination="35s-7W-Un7" id="oDA-Ty-2jn"/>
+                                                    <outlet property="wrapView" destination="Hm1-QC-AjG" id="tt2-xn-l6h"/>
                                                 </connections>
                                             </tableCellView>
                                         </prototypeCellViews>
