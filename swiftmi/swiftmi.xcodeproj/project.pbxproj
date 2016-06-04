@@ -13,6 +13,11 @@
 		FD222CBB1CFC2114008D6496 /* NSColor+SwiftMi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD222CBA1CFC2114008D6496 /* NSColor+SwiftMi.swift */; };
 		FD45A7BF1CFF4226009C92B7 /* SwiftyJSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FD915FB71CE8856500C5061D /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FD45A7C01CFF422B009C92B7 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FD915F9F1CE8855F00C5061D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD6A336A1D02C21100F42D9C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6A33691D02C21100F42D9C /* NotificationCenter.framework */; };
+		FD6A336F1D02C21100F42D9C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6A336E1D02C21100F42D9C /* TodayViewController.swift */; };
+		FD6A33721D02C21100F42D9C /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD6A33701D02C21100F42D9C /* TodayViewController.xib */; };
+		FD6A33761D02C21100F42D9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD6A33741D02C21100F42D9C /* InfoPlist.strings */; };
+		FD6A33791D02C21100F42D9C /* swiftmi-widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FD6A33681D02C21100F42D9C /* swiftmi-widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FD915FC01CE8857D00C5061D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD915FB71CE8856500C5061D /* SwiftyJSON.framework */; };
 		FD915FC11CE8858100C5061D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD915F9F1CE8855F00C5061D /* Alamofire.framework */; };
 		FD915FCA1CE9848100C5061D /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD915FC81CE9848100C5061D /* PopoverViewController.swift */; };
@@ -33,6 +38,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FD6A33771D02C21100F42D9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDF371C81CE05D4300300998 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6A33671D02C21100F42D9C;
+			remoteInfo = "swiftmi-widget";
+		};
 		FD915F9A1CE8855F00C5061D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FD915F901CE8855F00C5061D /* Alamofire.xcodeproj */;
@@ -160,6 +172,17 @@
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD6A338B1D02C21100F42D9C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FD6A33791D02C21100F42D9C /* swiftmi-widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -173,6 +196,13 @@
 		E6DC4A85B4454242578D5E0E /* Pods-swiftmiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftmiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftmiTests/Pods-swiftmiTests.release.xcconfig"; sourceTree = "<group>"; };
 		EAFA313BC0D84021382387CB /* Pods-swiftmiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftmiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftmiUITests/Pods-swiftmiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD222CBA1CFC2114008D6496 /* NSColor+SwiftMi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+SwiftMi.swift"; sourceTree = "<group>"; };
+		FD6A33681D02C21100F42D9C /* swiftmi-widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "swiftmi-widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6A33691D02C21100F42D9C /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		FD6A336D1D02C21100F42D9C /* swiftmi_widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = swiftmi_widget.entitlements; sourceTree = "<group>"; };
+		FD6A336E1D02C21100F42D9C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		FD6A33711D02C21100F42D9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		FD6A33731D02C21100F42D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6A33751D02C21100F42D9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FD915F901CE8855F00C5061D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../third/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		FD915FA81CE8856500C5061D /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = ../third/SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		FD915FC81CE9848100C5061D /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +229,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FD6A33651D02C21100F42D9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6A336A1D02C21100F42D9C /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FDF371CD1CE05D4300300998 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,6 +272,7 @@
 				2D700C47C2E440605697C75B /* Pods_swiftmi.framework */,
 				7A55EC644CA2470AB0FD0DD3 /* Pods_swiftmiTests.framework */,
 				492D620C740025E8F5C76E19 /* Pods_swiftmiUITests.framework */,
+				FD6A33691D02C21100F42D9C /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -257,6 +296,26 @@
 				FD222CBA1CFC2114008D6496 /* NSColor+SwiftMi.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		FD6A336B1D02C21100F42D9C /* swiftmi-widget */ = {
+			isa = PBXGroup;
+			children = (
+				FD6A336E1D02C21100F42D9C /* TodayViewController.swift */,
+				FD6A33701D02C21100F42D9C /* TodayViewController.xib */,
+				FD6A33731D02C21100F42D9C /* Info.plist */,
+				FD6A33741D02C21100F42D9C /* InfoPlist.strings */,
+				FD6A336C1D02C21100F42D9C /* Supporting Files */,
+			);
+			path = "swiftmi-widget";
+			sourceTree = "<group>";
+		};
+		FD6A336C1D02C21100F42D9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD6A336D1D02C21100F42D9C /* swiftmi_widget.entitlements */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		FD915F8F1CE8853A00C5061D /* third */ = {
@@ -348,6 +407,7 @@
 				FDF371D21CE05D4300300998 /* swiftmi */,
 				FDF371E21CE05D4300300998 /* swiftmiTests */,
 				FDF371ED1CE05D4300300998 /* swiftmiUITests */,
+				FD6A336B1D02C21100F42D9C /* swiftmi-widget */,
 				FDF371D11CE05D4300300998 /* Products */,
 				B4C4702354B4EEC9B97F61BE /* Pods */,
 				B039C8F183ADBD1605763619 /* Frameworks */,
@@ -360,6 +420,7 @@
 				FDF371D01CE05D4300300998 /* swiftmi.app */,
 				FDF371DF1CE05D4300300998 /* swiftmiTests.xctest */,
 				FDF371EA1CE05D4300300998 /* swiftmiUITests.xctest */,
+				FD6A33681D02C21100F42D9C /* swiftmi-widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -402,6 +463,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FD6A33671D02C21100F42D9C /* swiftmi-widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6A338A1D02C21100F42D9C /* Build configuration list for PBXNativeTarget "swiftmi-widget" */;
+			buildPhases = (
+				FD6A33641D02C21100F42D9C /* Sources */,
+				FD6A33651D02C21100F42D9C /* Frameworks */,
+				FD6A33661D02C21100F42D9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swiftmi-widget";
+			productName = "swiftmi-widget";
+			productReference = FD6A33681D02C21100F42D9C /* swiftmi-widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		FDF371CF1CE05D4300300998 /* swiftmi */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF371F31CE05D4300300998 /* Build configuration list for PBXNativeTarget "swiftmi" */;
@@ -413,10 +491,12 @@
 				8277AA7CC0482033317A0293 /* 📦 Embed Pods Frameworks */,
 				096679AB782FA655F071690A /* 📦 Copy Pods Resources */,
 				FD45A7B01CFF420E009C92B7 /* Copy Frameworks */,
+				FD6A338B1D02C21100F42D9C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FD6A33781D02C21100F42D9C /* PBXTargetDependency */,
 			);
 			name = swiftmi;
 			productName = swiftmi;
@@ -474,6 +554,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = swiftmi;
 				TargetAttributes = {
+					FD6A33671D02C21100F42D9C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					FDF371CF1CE05D4300300998 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -513,6 +596,7 @@
 				FDF371CF1CE05D4300300998 /* swiftmi */,
 				FDF371DE1CE05D4300300998 /* swiftmiTests */,
 				FDF371E91CE05D4300300998 /* swiftmiUITests */,
+				FD6A33671D02C21100F42D9C /* swiftmi-widget */,
 			);
 		};
 /* End PBXProject section */
@@ -619,6 +703,15 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FD6A33661D02C21100F42D9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6A33721D02C21100F42D9C /* TodayViewController.xib in Resources */,
+				FD6A33761D02C21100F42D9C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FDF371CE1CE05D4300300998 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -769,6 +862,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FD6A33641D02C21100F42D9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6A336F1D02C21100F42D9C /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FDF371CC1CE05D4300300998 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -806,6 +907,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FD6A33781D02C21100F42D9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD6A33671D02C21100F42D9C /* swiftmi-widget */;
+			targetProxy = FD6A33771D02C21100F42D9C /* PBXContainerItemProxy */;
+		};
 		FDF371E11CE05D4300300998 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FDF371CF1CE05D4300300998 /* swiftmi */;
@@ -819,6 +925,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		FD6A33701D02C21100F42D9C /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD6A33711D02C21100F42D9C /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		FD6A33741D02C21100F42D9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD6A33751D02C21100F42D9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		FDF371D71CE05D4300300998 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -830,6 +952,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FD6A337A1D02C21100F42D9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "swiftmi-widget/swiftmi_widget.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "swiftmi-widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftmi.osx.swiftmi.swiftmi-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FD6A337B1D02C21100F42D9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "swiftmi-widget/swiftmi_widget.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "swiftmi-widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftmi.osx.swiftmi.swiftmi-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		FDF371F11CE05D4300300998 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -918,6 +1066,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = swiftmi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -932,6 +1081,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = swiftmi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -997,6 +1147,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FD6A338A1D02C21100F42D9C /* Build configuration list for PBXNativeTarget "swiftmi-widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6A337A1D02C21100F42D9C /* Debug */,
+				FD6A337B1D02C21100F42D9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		FDF371CB1CE05D4300300998 /* Build configuration list for PBXProject "swiftmi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
