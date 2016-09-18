@@ -18,13 +18,13 @@ class PopoverViewController: NSViewController {
     var articles: [Article] = [Article]()
     var articleServices = ArticleServices()
 
-    private var reloadDataTimer: NSTimer?
+    fileprivate var reloadDataTimer: Timer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-        self.tableView.setDataSource(self)
-        self.tableView.setDelegate(self)
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
         
         loadData();
     }
@@ -32,13 +32,13 @@ class PopoverViewController: NSViewController {
     override func viewWillAppear() {
         //self.tableView.reloadData()
         super.viewWillAppear()
-        reloadDataTimer = NSTimer.every(15.seconds) {
+        reloadDataTimer = Timer.every(15.seconds) {
             [weak self] in
             self?.loadData();
         }
     }
     
-    @IBAction func toggleSettingButton(sender: NSView) {
+    @IBAction func toggleSettingButton(_ sender: NSView) {
         SMSettingsMenuAction.perform(sender)
         
     }
@@ -54,28 +54,28 @@ class PopoverViewController: NSViewController {
     
     func updateLastLabel() {
         
-        let currentDate = NSDate()
-        let time = currentDate.toString(DateFormat.Custom("YYYY-MM-dd HH:mm:ss"))
+        let currentDate = Date()
+        let time = currentDate.toString(format:DateFormat.custom("YYYY-MM-dd HH:mm:ss"))
         lastUpdated.stringValue = "更新时间 \(time!)"
     }
     
-    func loadData(maxId:Int = 0) {
+    func loadData(_ maxId:Int = 0) {
         articleServices.loadData(maxId) {
             articles in
             if let items = articles {
                 if maxId == 0 {
                     self.articles = items
-                    for item in items.reverse() {
-                        if !self.articles.contains({ (article:Article) -> Bool in
+                    for item in items.reversed() {
+                        if !self.articles.contains(where: { (article:Article) -> Bool in
                             return article.articleId == item.articleId
                         }) {
                             
-                          self.articles.insert(item, atIndex: 0)
+                          self.articles.insert(item, at: 0)
                         }
                     }
                    
                 } else {
-                    self.articles.appendContentsOf(items)
+                    self.articles.append(contentsOf: items)
                 }
                 self.tableView.reloadData()
                 self.updateLastLabel()
@@ -90,25 +90,25 @@ class PopoverViewController: NSViewController {
 
 // MARK: - NSTableViewDataSource
 extension PopoverViewController: NSTableViewDataSource {
-    func numberOfRowsInTableView(aTableView: NSTableView) -> Int {
+    func numberOfRows(in aTableView: NSTableView) -> Int {
         return self.articles.count
     }
     
 }
 
 extension PopoverViewController: NSTableViewDelegate {
-    func tableViewSelectionDidChange(notification: NSNotification) {
+    func tableViewSelectionDidChange(_ notification: Notification) {
         let table = notification.object as! NSTableView
-         NSWorkspace.sharedWorkspace().openURL(NSURL(string: self.articles[table.selectedRow].url)!)
+         NSWorkspace.shared().open(URL(string: self.articles[table.selectedRow].url)!)
     }
     
-    func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         
         if self.articles.count - row < 3,let last = self.articles.last {
             loadData(last.articleId) ///load more
         }
         
-        let cellView = tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: tableView) as! TBCell
+        let cellView = tableView.make(withIdentifier: tableColumn!.identifier, owner: tableView) as! TBCell
         cellView.configureData(self.articles[row])
         return cellView
     }

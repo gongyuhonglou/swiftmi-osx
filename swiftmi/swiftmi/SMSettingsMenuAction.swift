@@ -10,12 +10,12 @@ import Cocoa
 
 class SMSettingsMenuAction: NSObject {
 
-    class func perform(sender: NSView) {
+    class func perform(_ sender: NSView) {
 
-        let delegate = NSApplication.sharedApplication().delegate as! AppDelegate
+        let delegate = NSApplication.shared().delegate as! AppDelegate
         let menu = NSMenu()
         menu.addItem(NSMenuItem(title: "Quit", action: #selector(delegate.quit), keyEquivalent: "q"))
-        NSMenu.popUpContextMenu(menu, withEvent: NSApp.currentEvent!, forView: sender)
+        NSMenu.popUpContextMenu(menu, with: NSApp.currentEvent!, for: sender)
 
     }
 }

@@ -1,15 +1,47 @@
 PODS:
-  - SwiftDate (3.0.8)
+  - Alamofire (4.0.0)
+  - SwiftDate (3.0.9)
+  - SwiftyJSON (2.3.2)
   - SwiftyTimer (1.4.0)
 
 DEPENDENCIES:
-  - SwiftDate
-  - SwiftyTimer
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`)
+  - SwiftDate (from `https://github.com/malcommac/SwiftDate.git`, branch `feature/swift-3.0`)
+  - SwiftyJSON (from `https://github.com/IBM-Swift/SwiftyJSON.git`)
+  - SwiftyTimer (from `https://github.com/radex/SwiftyTimer.git`, branch `swift3`)
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire.git
+  SwiftDate:
+    :branch: feature/swift-3.0
+    :git: https://github.com/malcommac/SwiftDate.git
+  SwiftyJSON:
+    :git: https://github.com/IBM-Swift/SwiftyJSON.git
+  SwiftyTimer:
+    :branch: swift3
+    :git: https://github.com/radex/SwiftyTimer.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: 0ac38d7e312e87aeea608d384e44401f3d8a6b3d
+    :git: https://github.com/Alamofire/Alamofire.git
+  SwiftDate:
+    :commit: 4f894d54a04a5bbc3fb0a084506f7abef59a1904
+    :git: https://github.com/malcommac/SwiftDate.git
+  SwiftyJSON:
+    :commit: 73b523a107b798021ca9af74b5f7c20e435c8809
+    :git: https://github.com/IBM-Swift/SwiftyJSON.git
+  SwiftyTimer:
+    :commit: 8cb3860bfef05fc86860b73398a02b96ae0b789b
+    :git: https://github.com/radex/SwiftyTimer.git
 
 SPEC CHECKSUMS:
-  SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
+  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  SwiftDate: fa487d9b7d8c3070ea2553486902494f4915465d
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   SwiftyTimer: db4458cfaf67fc71e16ad6e4637c60b86f76a649
 
-PODFILE CHECKSUM: a5735ec63b88c162f564302a4a6f9b88a2609d49
+PODFILE CHECKSUM: 4d4dad054c70a0d23bd964c915e04a89ab8571b2
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.0.1

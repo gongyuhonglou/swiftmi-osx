@@ -9,12 +9,12 @@
 import Cocoa
 
 class SMPopover {
-    private class var appDelegate: AppDelegate {
-        return NSApplication.sharedApplication().delegate as! AppDelegate
+    fileprivate class var appDelegate: AppDelegate {
+        return NSApplication.shared().delegate as! AppDelegate
     }
     
     class func toggle() {
-        if appDelegate.popover.shown {
+        if appDelegate.popover.isShown {
             close()
         } else {
             show()
@@ -22,7 +22,7 @@ class SMPopover {
     }
     
     class func close() {
-        if !appDelegate.popover.shown {
+        if !appDelegate.popover.isShown {
             return
         }
         
@@ -31,14 +31,14 @@ class SMPopover {
     }
     
     class func show() {
-        NSRunningApplication.currentApplication().activateWithOptions(NSApplicationActivationOptions.ActivateIgnoringOtherApps)
+        NSRunningApplication.current().activate(options: NSApplicationActivationOptions.activateIgnoringOtherApps)
         
         guard let button = appDelegate.statusItem.button else {
             return
         }
         
         appDelegate.eventMonitor?.start()
-        appDelegate.popover.showRelativeToRect(button.frame, ofView: button, preferredEdge: .MinY)
+        appDelegate.popover.show(relativeTo: button.frame, of: button, preferredEdge: .minY)
     }
 
     

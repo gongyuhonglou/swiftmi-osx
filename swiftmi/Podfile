@@ -1,16 +1,27 @@
 # Uncomment this line to define a global platform for your project
 
-platform :osx, '10.10'
+platform :osx, '10.11'
 use_frameworks!
 
 def universal_pods 
-pod 'SwiftyTimer'
-pod 'SwiftDate'
+pod 'SwiftyTimer', :git => 'https://github.com/radex/SwiftyTimer.git', :branch => 'swift3'
+pod 'SwiftDate', :git => 'https://github.com/malcommac/SwiftDate.git', :branch => 'feature/swift-3.0'
+pod 'SwiftyJSON', :git => 'https://github.com/IBM-Swift/SwiftyJSON.git'
+pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git'
+
 end
 
 
 target 'swiftmi' do
 universal_pods
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '3.0'
+        end
+    end
+end
 end
 
 target 'swiftmiTests' do

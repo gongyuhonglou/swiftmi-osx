@@ -12,15 +12,20 @@ import Alamofire
 
 enum Router: URLRequestConvertible {
     
+    public func asURLRequest() throws -> URLRequest {
+        return self.urlRequest
+    }
+
+    
     static var token: String?
     
     //Restfull api
-    case ArticleList(maxId:Int,count:Int)
+    case articleList(maxId:Int,count:Int)
     
-    var method: Alamofire.Method {
+    var method: Alamofire.HTTPMethod {
         switch self {
         default:
-            return .GET
+            return .get
         }
         
     }
@@ -28,16 +33,17 @@ enum Router: URLRequestConvertible {
     
     var path: String {
         switch self {
-        case .ArticleList(let maxId,let count):
+        case .articleList(let maxId,let count):
             return ServiceApi.getArticlesUrl(maxId, count: count)
         }
     }
     
     
-    var URLRequest: NSMutableURLRequest {
-        let URL = NSURL(string: path)!
-        let mutableURLRequest = NSMutableURLRequest(URL: URL)
-        mutableURLRequest.HTTPMethod = method.rawValue
+    var urlRequest: URLRequest {
+        let url =  URL(string: path)!
+        var mutableURLRequest = URLRequest(url: url)
+        mutableURLRequest.httpMethod = method.rawValue
+
         
         if let token = Router.token {
             mutableURLRequest.setValue("\(token)", forHTTPHeaderField: "token")

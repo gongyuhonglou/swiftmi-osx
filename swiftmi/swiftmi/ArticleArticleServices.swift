@@ -15,13 +15,13 @@ class ArticleServices: NSObject {
     var loading:Bool = false
 
     
-    func loadData(maxId:Int,callback:((articles:[Article]?) -> ())) {
+    func loadData(_ maxId:Int,callback:@escaping ((_ articles:[Article]?) -> ())) {
         if self.loading {
             return
         }
         self.loading = true
         
-        Alamofire.request(Router.ArticleList(maxId: maxId, count: 20)).responseJSON {
+        Alamofire.request(Router.articleList(maxId: maxId, count: 20)).responseJSON {
             res in
             self.loading = false
             
@@ -29,7 +29,7 @@ class ArticleServices: NSObject {
             let result = JSON(json!)
             
             guard let _ = result["isSuc"].bool else {
-                return callback(articles: nil)
+                return callback(nil)
             }
             
             var articles:[Article] = [Article]()
@@ -38,7 +38,7 @@ class ArticleServices: NSObject {
                 let article = Article.mapping(item)
                 articles.append(article)
             }
-            callback(articles: articles)
+            callback(articles)
         }
         
     }

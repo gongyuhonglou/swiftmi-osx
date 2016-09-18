@@ -11,15 +11,11 @@
 		8FA4F85FDE19FFA44AC37D9E /* Pods_swiftmi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D700C47C2E440605697C75B /* Pods_swiftmi.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		94A353344EE9AC3F2B364F0C /* Pods_swiftmiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A55EC644CA2470AB0FD0DD3 /* Pods_swiftmiTests.framework */; };
 		FD222CBB1CFC2114008D6496 /* NSColor+SwiftMi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD222CBA1CFC2114008D6496 /* NSColor+SwiftMi.swift */; };
-		FD45A7BF1CFF4226009C92B7 /* SwiftyJSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FD915FB71CE8856500C5061D /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FD45A7C01CFF422B009C92B7 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FD915F9F1CE8855F00C5061D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FD6A336A1D02C21100F42D9C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6A33691D02C21100F42D9C /* NotificationCenter.framework */; };
 		FD6A336F1D02C21100F42D9C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6A336E1D02C21100F42D9C /* TodayViewController.swift */; };
 		FD6A33721D02C21100F42D9C /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD6A33701D02C21100F42D9C /* TodayViewController.xib */; };
 		FD6A33761D02C21100F42D9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD6A33741D02C21100F42D9C /* InfoPlist.strings */; };
 		FD6A33791D02C21100F42D9C /* swiftmi-widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FD6A33681D02C21100F42D9C /* swiftmi-widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		FD915FC01CE8857D00C5061D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD915FB71CE8856500C5061D /* SwiftyJSON.framework */; };
-		FD915FC11CE8858100C5061D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD915F9F1CE8855F00C5061D /* Alamofire.framework */; };
 		FD915FCA1CE9848100C5061D /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD915FC81CE9848100C5061D /* PopoverViewController.swift */; };
 		FD915FCB1CE9848100C5061D /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD915FC91CE9848100C5061D /* PopoverViewController.xib */; };
 		FDA0475B1CE9C6D000AF7121 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA0475A1CE9C6D000AF7121 /* EventMonitor.swift */; };
@@ -45,104 +41,6 @@
 			remoteGlobalIDString = FD6A33671D02C21100F42D9C;
 			remoteInfo = "swiftmi-widget";
 		};
-		FD915F9A1CE8855F00C5061D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD915F901CE8855F00C5061D /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS";
-		};
-		FD915F9C1CE8855F00C5061D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD915F901CE8855F00C5061D /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS Tests";
-		};
-		FD915F9E1CE8855F00C5061D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD915F901CE8855F00C5061D /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
-			remoteInfo = "Alamofire OSX";
-		};
-		FD915FA01CE8855F00C5061D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD915F901CE8855F00C5061D /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
-			remoteInfo = "Alamofire OSX Tests";
-		};
-		FD915FA21CE8855F00C5061D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD915F901CE8855F00C5061D /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
-			remoteInfo = "Alamofire tvOS";
-		};
-		FD915FA41CE8855F00C5061D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD915F901CE8855F00C5061D /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
-			remoteInfo = "Alamofire tvOS Tests";
-		};
-		FD915FA61CE8855F00C5061D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD915F901CE8855F00C5061D /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E4202FE01B667AA100C997FB;
-			remoteInfo = "Alamofire watchOS";
-		};
-		FD915FB21CE8856500C5061D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD915FA81CE8856500C5061D /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
-			remoteInfo = "SwiftyJSON iOS";
-		};
-		FD915FB41CE8856500C5061D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD915FA81CE8856500C5061D /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2E4FEFE619575BE100351305;
-			remoteInfo = "SwiftyJSON iOS Tests";
-		};
-		FD915FB61CE8856500C5061D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD915FA81CE8856500C5061D /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9C7DFC5B1A9102BD005AA3F7;
-			remoteInfo = "SwiftyJSON OSX";
-		};
-		FD915FB81CE8856500C5061D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD915FA81CE8856500C5061D /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9C7DFC651A9102BD005AA3F7;
-			remoteInfo = "SwiftyJSON OSX Tests";
-		};
-		FD915FBA1CE8856500C5061D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD915FA81CE8856500C5061D /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E4D7CCE81B9465A700EE7221;
-			remoteInfo = "SwiftyJSON watchOS";
-		};
-		FD915FBC1CE8856500C5061D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD915FA81CE8856500C5061D /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7236B4F61BAC14150020529B;
-			remoteInfo = "SwiftyJSON tvOS";
-		};
-		FD915FBE1CE8856500C5061D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD915FA81CE8856500C5061D /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
-			remoteInfo = "SwiftyJSON tvOS Tests";
-		};
 		FDF371E01CE05D4300300998 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FDF371C81CE05D4300300998 /* Project object */;
@@ -166,8 +64,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FD45A7C01CFF422B009C92B7 /* Alamofire.framework in Copy Frameworks */,
-				FD45A7BF1CFF4226009C92B7 /* SwiftyJSON.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,8 +99,6 @@
 		FD6A33711D02C21100F42D9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
 		FD6A33731D02C21100F42D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD6A33751D02C21100F42D9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FD915F901CE8855F00C5061D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../third/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
-		FD915FA81CE8856500C5061D /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = ../third/SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		FD915FC81CE9848100C5061D /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		FD915FC91CE9848100C5061D /* PopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
 		FDA0475A1CE9C6D000AF7121 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
@@ -241,8 +135,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD915FC11CE8858100C5061D /* Alamofire.framework in Frameworks */,
-				FD915FC01CE8857D00C5061D /* SwiftyJSON.framework in Frameworks */,
 				8FA4F85FDE19FFA44AC37D9E /* Pods_swiftmi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,43 +210,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FD915F8F1CE8853A00C5061D /* third */ = {
-			isa = PBXGroup;
-			children = (
-				FD915FA81CE8856500C5061D /* SwiftyJSON.xcodeproj */,
-				FD915F901CE8855F00C5061D /* Alamofire.xcodeproj */,
-			);
-			name = third;
-			sourceTree = "<group>";
-		};
-		FD915F911CE8855F00C5061D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FD915F9B1CE8855F00C5061D /* Alamofire.framework */,
-				FD915F9D1CE8855F00C5061D /* Alamofire iOS Tests.xctest */,
-				FD915F9F1CE8855F00C5061D /* Alamofire.framework */,
-				FD915FA11CE8855F00C5061D /* Alamofire OSX Tests.xctest */,
-				FD915FA31CE8855F00C5061D /* Alamofire.framework */,
-				FD915FA51CE8855F00C5061D /* Alamofire tvOS Tests.xctest */,
-				FD915FA71CE8855F00C5061D /* Alamofire.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FD915FA91CE8856500C5061D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FD915FB31CE8856500C5061D /* SwiftyJSON.framework */,
-				FD915FB51CE8856500C5061D /* SwiftyJSON iOS Tests.xctest */,
-				FD915FB71CE8856500C5061D /* SwiftyJSON.framework */,
-				FD915FB91CE8856500C5061D /* SwiftyJSON OSX Tests.xctest */,
-				FD915FBB1CE8856500C5061D /* SwiftyJSON.framework */,
-				FD915FBD1CE8856500C5061D /* SwiftyJSON.framework */,
-				FD915FBF1CE8856500C5061D /* SwiftyJSON tvOS Tests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		FD915FC71CE9841C00C5061D /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,7 +258,6 @@
 		FDF371C71CE05D4300300998 = {
 			isa = PBXGroup;
 			children = (
-				FD915F8F1CE8853A00C5061D /* third */,
 				FDF371D21CE05D4300300998 /* swiftmi */,
 				FDF371E21CE05D4300300998 /* swiftmiTests */,
 				FDF371ED1CE05D4300300998 /* swiftmiUITests */,
@@ -484,12 +338,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF371F31CE05D4300300998 /* Build configuration list for PBXNativeTarget "swiftmi" */;
 			buildPhases = (
-				082462480D5DE4C8F06E7506 /* 📦 Check Pods Manifest.lock */,
+				082462480D5DE4C8F06E7506 /* [CP] Check Pods Manifest.lock */,
 				FDF371CC1CE05D4300300998 /* Sources */,
 				FDF371CD1CE05D4300300998 /* Frameworks */,
 				FDF371CE1CE05D4300300998 /* Resources */,
-				8277AA7CC0482033317A0293 /* 📦 Embed Pods Frameworks */,
-				096679AB782FA655F071690A /* 📦 Copy Pods Resources */,
+				8277AA7CC0482033317A0293 /* [CP] Embed Pods Frameworks */,
+				096679AB782FA655F071690A /* [CP] Copy Pods Resources */,
 				FD45A7B01CFF420E009C92B7 /* Copy Frameworks */,
 				FD6A338B1D02C21100F42D9C /* Embed App Extensions */,
 			);
@@ -507,12 +361,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF371F61CE05D4300300998 /* Build configuration list for PBXNativeTarget "swiftmiTests" */;
 			buildPhases = (
-				763C7C80AB6A2C340AB91630 /* 📦 Check Pods Manifest.lock */,
+				763C7C80AB6A2C340AB91630 /* [CP] Check Pods Manifest.lock */,
 				FDF371DB1CE05D4300300998 /* Sources */,
 				FDF371DC1CE05D4300300998 /* Frameworks */,
 				FDF371DD1CE05D4300300998 /* Resources */,
-				661BBE52DB94D08A76159751 /* 📦 Embed Pods Frameworks */,
-				8297C6503920C00646B12F15 /* 📦 Copy Pods Resources */,
+				661BBE52DB94D08A76159751 /* [CP] Embed Pods Frameworks */,
+				8297C6503920C00646B12F15 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -528,11 +382,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF371F91CE05D4300300998 /* Build configuration list for PBXNativeTarget "swiftmiUITests" */;
 			buildPhases = (
-				521D97D110D1F7058A13AF2A /* 📦 Check Pods Manifest.lock */,
+				521D97D110D1F7058A13AF2A /* [CP] Check Pods Manifest.lock */,
 				FDF371E61CE05D4300300998 /* Sources */,
 				FDF371E71CE05D4300300998 /* Frameworks */,
 				FDF371E81CE05D4300300998 /* Resources */,
-				420FF0D5DD04DBF86871A50D /* 📦 Copy Pods Resources */,
+				420FF0D5DD04DBF86871A50D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -551,21 +405,25 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = swiftmi;
 				TargetAttributes = {
 					FD6A33671D02C21100F42D9C = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					FDF371CF1CE05D4300300998 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					FDF371DE1CE05D4300300998 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = FDF371CF1CE05D4300300998;
 					};
 					FDF371E91CE05D4300300998 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = FDF371CF1CE05D4300300998;
 					};
 				};
@@ -581,16 +439,6 @@
 			mainGroup = FDF371C71CE05D4300300998;
 			productRefGroup = FDF371D11CE05D4300300998 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FD915F911CE8855F00C5061D /* Products */;
-					ProjectRef = FD915F901CE8855F00C5061D /* Alamofire.xcodeproj */;
-				},
-				{
-					ProductGroup = FD915FA91CE8856500C5061D /* Products */;
-					ProjectRef = FD915FA81CE8856500C5061D /* SwiftyJSON.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				FDF371CF1CE05D4300300998 /* swiftmi */,
@@ -600,107 +448,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		FD915F9B1CE8855F00C5061D /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = FD915F9A1CE8855F00C5061D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD915F9D1CE8855F00C5061D /* Alamofire iOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire iOS Tests.xctest";
-			remoteRef = FD915F9C1CE8855F00C5061D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD915F9F1CE8855F00C5061D /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = FD915F9E1CE8855F00C5061D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD915FA11CE8855F00C5061D /* Alamofire OSX Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire OSX Tests.xctest";
-			remoteRef = FD915FA01CE8855F00C5061D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD915FA31CE8855F00C5061D /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = FD915FA21CE8855F00C5061D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD915FA51CE8855F00C5061D /* Alamofire tvOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire tvOS Tests.xctest";
-			remoteRef = FD915FA41CE8855F00C5061D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD915FA71CE8855F00C5061D /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = FD915FA61CE8855F00C5061D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD915FB31CE8856500C5061D /* SwiftyJSON.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyJSON.framework;
-			remoteRef = FD915FB21CE8856500C5061D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD915FB51CE8856500C5061D /* SwiftyJSON iOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SwiftyJSON iOS Tests.xctest";
-			remoteRef = FD915FB41CE8856500C5061D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD915FB71CE8856500C5061D /* SwiftyJSON.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyJSON.framework;
-			remoteRef = FD915FB61CE8856500C5061D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD915FB91CE8856500C5061D /* SwiftyJSON OSX Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SwiftyJSON OSX Tests.xctest";
-			remoteRef = FD915FB81CE8856500C5061D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD915FBB1CE8856500C5061D /* SwiftyJSON.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyJSON.framework;
-			remoteRef = FD915FBA1CE8856500C5061D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD915FBD1CE8856500C5061D /* SwiftyJSON.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyJSON.framework;
-			remoteRef = FD915FBC1CE8856500C5061D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD915FBF1CE8856500C5061D /* SwiftyJSON tvOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SwiftyJSON tvOS Tests.xctest";
-			remoteRef = FD915FBE1CE8856500C5061D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FD6A33661D02C21100F42D9C /* Resources */ = {
@@ -739,14 +486,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		082462480D5DE4C8F06E7506 /* 📦 Check Pods Manifest.lock */ = {
+		082462480D5DE4C8F06E7506 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -754,14 +501,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		096679AB782FA655F071690A /* 📦 Copy Pods Resources */ = {
+		096679AB782FA655F071690A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -769,14 +516,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftmi/Pods-swiftmi-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		420FF0D5DD04DBF86871A50D /* 📦 Copy Pods Resources */ = {
+		420FF0D5DD04DBF86871A50D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -784,14 +531,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftmiUITests/Pods-swiftmiUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		521D97D110D1F7058A13AF2A /* 📦 Check Pods Manifest.lock */ = {
+		521D97D110D1F7058A13AF2A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -799,14 +546,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		661BBE52DB94D08A76159751 /* 📦 Embed Pods Frameworks */ = {
+		661BBE52DB94D08A76159751 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -814,14 +561,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftmiTests/Pods-swiftmiTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		763C7C80AB6A2C340AB91630 /* 📦 Check Pods Manifest.lock */ = {
+		763C7C80AB6A2C340AB91630 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -829,14 +576,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		8277AA7CC0482033317A0293 /* 📦 Embed Pods Frameworks */ = {
+		8277AA7CC0482033317A0293 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -844,14 +591,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftmi/Pods-swiftmi-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8297C6503920C00646B12F15 /* 📦 Copy Pods Resources */ = {
+		8297C6503920C00646B12F15 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -962,6 +709,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftmi.osx.swiftmi.swiftmi-widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -975,6 +723,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftmi.osx.swiftmi.swiftmi-widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -992,8 +741,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -1037,8 +788,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -1057,6 +810,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -1064,14 +818,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B8C4D95C0956C29FEB571086 /* Pods-swiftmi.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = swiftmi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftmi.osx.swiftmi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1079,14 +834,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2F602C288A7E6090A432F47E /* Pods-swiftmi.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = swiftmi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftmi.osx.swiftmi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1094,12 +850,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DC514FEA6FED3FB2195E283D /* Pods-swiftmiTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = swiftmiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftmi.osx.swiftmiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftmi.app/Contents/MacOS/swiftmi";
 			};
 			name = Debug;
@@ -1108,12 +866,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6DC4A85B4454242578D5E0E /* Pods-swiftmiTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = swiftmiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftmi.osx.swiftmiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftmi.app/Contents/MacOS/swiftmi";
 			};
 			name = Release;
@@ -1122,11 +882,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EAFA313BC0D84021382387CB /* Pods-swiftmiUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = swiftmiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftmi.osx.swiftmiUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = swiftmi;
 			};
 			name = Debug;
@@ -1135,11 +897,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0E659A92D6728BEBFF624524 /* Pods-swiftmiUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = swiftmiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftmi.osx.swiftmiUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = swiftmi;
 			};
 			name = Release;
@@ -1154,6 +918,7 @@
 				FD6A337B1D02C21100F42D9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDF371CB1CE05D4300300998 /* Build configuration list for PBXProject "swiftmi" */ = {
 			isa = XCConfigurationList;

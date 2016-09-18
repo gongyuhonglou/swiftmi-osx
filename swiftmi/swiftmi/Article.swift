@@ -18,7 +18,7 @@ class Article: NSObject {
     var viewCount: Int64?
     var url:String!
     
-    class func mapping(json:JSON) -> Article{
+    class func mapping(_ json:JSON) -> Article{
         let article = Article()
         let createDate = json["createDate"].doubleValue
         let viewCount = json["viewCount"].int64!

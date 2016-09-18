@@ -12,44 +12,44 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
-    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
+    let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
 
     let popover = NSPopover()
     var eventMonitor : EventMonitor?
     
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         if let button = statusItem.button {
             button.image = NSImage(named: "code")
-            button.imagePosition = .ImageLeft
+            button.imagePosition = .imageLeft
             button.action = #selector(togglePopover)
         }
         
-        eventMonitor = EventMonitor(mask: [.LeftMouseDownMask, .RightMouseDownMask]) {
+        eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) {
             [unowned self] event in
-            if self.popover.shown {
+            if self.popover.isShown {
                 SMPopover.close()
             }
         }
         popover.appearance = NSAppearance(named: NSAppearanceNameAqua)
 
         popover.contentViewController = PopoverViewController(nibName: "PopoverViewController", bundle: nil)
-        popover.behavior = .Transient
+        popover.behavior = .transient
 
     }
 
-    func applicationWillTerminate(aNotification: NSNotification) {
+    func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
 
     
     
-    func togglePopover(sender: AnyObject?) {
+    func togglePopover(_ sender: AnyObject?) {
         SMPopover.toggle()
     }
     
     func quit() {
-        NSApplication.sharedApplication().terminate(self)
+        NSApplication.shared().terminate(self)
     }
 
 

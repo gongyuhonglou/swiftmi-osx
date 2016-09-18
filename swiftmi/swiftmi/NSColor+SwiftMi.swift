@@ -11,7 +11,7 @@ import Cocoa
 extension NSColor {
     
     class func sm_whiteColor() -> NSColor {
-        return NSColor.whiteColor()
+        return NSColor.white
     }
     
     class func sm_highlightColor() -> NSColor {

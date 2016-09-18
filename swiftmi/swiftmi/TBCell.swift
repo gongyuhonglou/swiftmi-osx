@@ -18,25 +18,25 @@ class TBCell: NSTableCellView {
 
     @IBOutlet weak var wrapView: NSView!
 
-    private var trackingArea: NSTrackingArea?
-    override func drawRect(dirtyRect: NSRect) {
-        super.drawRect(dirtyRect)
+    fileprivate var trackingArea: NSTrackingArea?
+    override func draw(_ dirtyRect: NSRect) {
+        super.draw(dirtyRect)
 
         // Drawing code here.
     }
     
-    func formatDate(date:NSDate)->String {
+    func formatDate(_ date:Date)->String {
         
-        let fmt = NSDateFormatter()
+        let fmt = DateFormatter()
         
         fmt.dateFormat = "yyyy-MM-dd"
-        let dateString = fmt.stringFromDate(date)
+        let dateString = fmt.string(from: date)
         return dateString
     }
     
-    private func createTrackingAreaIfNeeded() {
+    fileprivate func createTrackingAreaIfNeeded() {
         if trackingArea == nil {
-            trackingArea = NSTrackingArea(rect: CGRect.zero, options: [NSTrackingAreaOptions.InVisibleRect, NSTrackingAreaOptions.MouseEnteredAndExited, NSTrackingAreaOptions.ActiveAlways], owner: self, userInfo: nil)
+            trackingArea = NSTrackingArea(rect: CGRect.zero, options: [NSTrackingAreaOptions.inVisibleRect, NSTrackingAreaOptions.mouseEnteredAndExited, NSTrackingAreaOptions.activeAlways], owner: self, userInfo: nil)
         }
     }
     
@@ -50,21 +50,21 @@ class TBCell: NSTableCellView {
         }
     }
     
-    func configureData(article:Article) {
+    func configureData(_ article:Article) {
        titleTextView.stringValue = article.title!
        sourceTextView.stringValue = article.source!
-       let createDate = NSDate(timeIntervalSince1970: article.createDate)
+       let createDate = Date(timeIntervalSince1970: article.createDate)
        dateTextView.stringValue = formatDate(createDate)
     }
     
-    override func mouseEntered(theEvent: NSEvent) {
+    override func mouseEntered(with theEvent: NSEvent) {
         wrapView.wantsLayer = true
-        wrapView.layer?.backgroundColor  = NSColor.sm_highlightColor().CGColor
+        wrapView.layer?.backgroundColor  = NSColor.sm_highlightColor().cgColor
     }
     
-    override func mouseExited(theEvent: NSEvent) {
+    override func mouseExited(with theEvent: NSEvent) {
         
-        wrapView.layer?.backgroundColor = NSColor.sm_whiteColor().CGColor
+        wrapView.layer?.backgroundColor = NSColor.sm_whiteColor().cgColor
 
     }
 }
